@@ -1,0 +1,88 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="1350" viewBox="0 0 1080 1350" role="img" aria-labelledby="title desc">
+  <title id="title">Dia de Africa no Tecnico</title>
+  <desc id="desc">Poster promocional para o evento Dia de Africa no Tecnico em 27 de Maio de 2026.</desc>
+  <rect width="1080" height="1350" fill="#E5C9A3"/>
+
+  <polygon points="0,0 178,0 0,178" fill="#FF5C1B"/>
+  <polygon points="88,0 250,0 142,110" fill="#0F3E38"/>
+  <polygon points="250,0 420,0 290,136" fill="#FFC14A"/>
+  <polygon points="0,1010 0,1210 158,1010" fill="#FFC14A"/>
+  <polygon points="0,1160 0,1350 210,1350" fill="#FF5C1B"/>
+  <polygon points="166,1248 340,1350 186,1350" fill="#0F3E38"/>
+
+  <rect x="762" y="52" width="118" height="44" rx="22" fill="#FFFFFF" opacity="0.9"/>
+  <text x="821" y="81" font-family="Arial, sans-serif" font-size="24" font-weight="700" text-anchor="middle" fill="#1B8CD8">aeist</text>
+  <circle cx="955" cy="74" r="42" fill="#FFFFFF" opacity="0.95"/>
+  <circle cx="955" cy="74" r="35" fill="none" stroke="#1B8CD8" stroke-width="5"/>
+  <text x="955" y="80" font-family="Arial, sans-serif" font-size="18" font-weight="700" text-anchor="middle" fill="#1B8CD8">NEAIST</text>
+
+  <g transform="translate(425 205)">
+    <path d="M179 16 L364 48 L530 128 L612 310 L554 500 L430 640 L320 840 L170 936 L44 736 L76 548 L0 384 L28 162 Z" fill="#24364C"/>
+    <path d="M179 16 L266 38 L256 196 L120 212 L28 162 Z" fill="#FF9B21"/>
+    <path d="M256 196 L418 108 L518 180 L460 324 L310 336 Z" fill="#0F6A66"/>
+    <path d="M120 212 L256 196 L310 336 L154 378 L60 324 Z" fill="#D64A1A"/>
+    <path d="M310 336 L460 324 L522 438 L430 560 L286 516 Z" fill="#FF9B21"/>
+    <path d="M154 378 L286 516 L218 700 L88 604 L70 438 Z" fill="#0F6A66"/>
+    <path d="M430 560 L522 438 L548 622 L448 760 L324 722 Z" fill="#D64A1A"/>
+    <path d="M218 700 L324 722 L320 840 L170 936 L120 820 Z" fill="#FF9B21"/>
+    <path d="M324 722 L448 760 L430 924 L320 840 Z" fill="#0F6A66"/>
+    <path d="M88 604 L218 700 L120 820 L44 736 Z" fill="#24364C"/>
+    <path d="M364 48 L530 128 L612 310 L518 180 Z" fill="#FF9B21"/>
+    <path d="M448 760 L548 622 L554 500 L612 310 L612 310 L602 478 L612 644 L530 822 L430 924 Z" fill="#24364C"/>
+    <path d="M286 516 L430 560 L324 722 L218 700 Z" fill="#24364C"/>
+
+    <g stroke="#E5C9A3" stroke-width="6" opacity="0.65">
+      <path d="M120 72 L236 72"/>
+      <path d="M90 112 L206 112"/>
+      <path d="M320 152 L438 152"/>
+      <path d="M286 194 L466 194"/>
+      <path d="M124 270 L238 270"/>
+      <path d="M384 412 L486 412"/>
+      <path d="M146 560 L248 560"/>
+      <path d="M342 638 L472 638"/>
+      <path d="M206 810 L302 810"/>
+    </g>
+  </g>
+
+  <text x="84" y="620" font-family="Poppins, Arial, sans-serif" font-size="42" font-weight="700" fill="#86331A">Dia de</text>
+  <text x="84" y="730" font-family="Poppins, Arial, sans-serif" font-size="104" font-weight="800" fill="#86331A">Africa</text>
+  <text x="84" y="810" font-family="Poppins, Arial, sans-serif" font-size="72" font-weight="800" fill="#0F6A66">no Tecnico</text>
+
+  <line x1="84" y1="852" x2="362" y2="852" stroke="#C98A29" stroke-width="4"/>
+  <rect x="84" y="904" width="48" height="48" rx="24" fill="#A53C20"/>
+  <rect x="84" y="1000" width="48" height="48" rx="24" fill="#D88909"/>
+  <rect x="84" y="1096" width="48" height="48" rx="24" fill="#0F6A66"/>
+
+  <text x="156" y="938" font-family="Inter, Arial, sans-serif" font-size="40" font-weight="700" fill="#5B2A1A">27/05/26</text>
+  <text x="156" y="1034" font-family="Inter, Arial, sans-serif" font-size="40" font-weight="700" fill="#5B2A1A">14h as 18h</text>
+  <text x="156" y="1130" font-family="Inter, Arial, sans-serif" font-size="40" font-weight="700" fill="#5B2A1A">Tecnico Innovation Center (TIC)</text>
+
+  <circle cx="108" cy="928" r="11" fill="#FFFFFF"/>
+  <rect x="96" y="917" width="24" height="18" rx="3" fill="none" stroke="#FFFFFF" stroke-width="3"/>
+  <circle cx="108" cy="1024" r="14" fill="none" stroke="#FFFFFF" stroke-width="4"/>
+  <line x1="108" y1="1024" x2="108" y2="1014" stroke="#FFFFFF" stroke-width="4"/>
+  <line x1="108" y1="1024" x2="116" y2="1028" stroke="#FFFFFF" stroke-width="4"/>
+  <path d="M108 1104 C120 1104 128 1112 128 1122 C128 1138 108 1150 108 1150 C108 1150 88 1138 88 1122 C88 1112 96 1104 108 1104 Z" fill="#FFFFFF"/>
+  <circle cx="108" cy="1122" r="6" fill="#0F6A66"/>
+
+  <g transform="translate(770 1160)" fill="#86331A">
+    <ellipse cx="0" cy="60" rx="34" ry="62"/>
+    <ellipse cx="74" cy="76" rx="20" ry="30"/>
+    <rect x="-10" y="110" width="6" height="48" rx="3"/>
+    <rect x="64" y="98" width="6" height="56" rx="3"/>
+  </g>
+  <g transform="translate(875 1168)">
+    <circle cx="0" cy="16" r="16" fill="#FFC14A"/>
+    <rect x="-14" y="34" width="28" height="44" rx="10" fill="#D64A1A"/>
+    <rect x="-24" y="78" width="48" height="76" rx="16" fill="#0F6A66"/>
+    <rect x="-12" y="154" width="6" height="42" rx="3" fill="#0F6A66"/>
+    <rect x="6" y="154" width="6" height="42" rx="3" fill="#0F6A66"/>
+  </g>
+  <g transform="translate(972 1160)">
+    <circle cx="0" cy="16" r="16" fill="#FF5C1B"/>
+    <rect x="-12" y="34" width="24" height="46" rx="10" fill="#FFC14A"/>
+    <path d="M-26 84 Q0 66 26 84 L18 150 L-18 150 Z" fill="#A53C20"/>
+    <rect x="-8" y="150" width="6" height="42" rx="3" fill="#A53C20"/>
+    <rect x="4" y="150" width="6" height="42" rx="3" fill="#A53C20"/>
+  </g>
+</svg>

@@ -1,0 +1,56 @@
+# OS / file manager
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editors / IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.venv/
+venv/
+env/
+
+# Node / frontend tooling
+node_modules/
+.npm/
+.pnpm-store/
+.parcel-cache/
+.next/
+dist/
+build/
+.cache/
+coverage/
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Local env / secrets
+.env
+.env.*
+!.env.example
+
+# Temporary / backup files
+tmp/
+temp/
+*.tmp
+*.bak
+*.backup
+
+# Generated archives
+*.zip
+*.tar
+*.tar.gz

@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="NEAIST - Núcleo dos Estudantes Africanos do Instituto Superior Técnico">
+    <meta name="keywords" content="NEAIST, IST, Técnico Lisboa, African Students, Estudantes Africanos">
+    <meta name="author" content="NEAIST">
+    <title>NEAIST - Núcleo dos Estudantes Africanos do IST</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="images/branding/neaist-logo.png">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Poppins:wght@600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animations.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="container">
+            <div class="nav-wrapper">
+                <a href="index.html" class="logo">
+                    <span class="logo-mark">
+                        <img src="images/branding/neaist-logo.png" alt="NEAIST logo">
+                    </span>
+                    <span class="logo-text-group">
+                        <span class="logo-text">NEAIST</span>
+                        <span class="logo-subtext" data-i18n="logo_subtext">Núcleo de Estudantes Africanos no Instituto Superior Técnico</span>
+                    </span>
+                </a>
+                <div class="nav-menu" id="navMenu">
+                    <ul class="nav-list">
+                        <li class="nav-item"><a href="index.html" class="nav-link active" data-i18n="nav_home">Início</a></li>
+                        <li class="nav-item"><a href="sobre-nos.html" class="nav-link" data-i18n="nav_about">Sobre Nós</a></li>
+                        <li class="nav-item"><a href="noticias.html" class="nav-link" data-i18n="nav_news">Notícias</a></li>
+                        <li class="nav-item"><a href="recursos.html" class="nav-link" data-i18n="nav_resources">Recursos</a></li>
+                        <li class="nav-item"><a href="guia-caloiro.html" class="nav-link" data-i18n="nav_guide">Guia do Caloiro</a></li>
+                        <li class="nav-item"><a href="mentoria.html" class="nav-link" data-i18n="nav_mentoring">Programa Mentorado</a></li>
+                        <li class="nav-item"><a href="contactos.html" class="nav-link" data-i18n="nav_contact">Contactos</a></li>
+                        <li class="nav-item"><a href="https://docs.google.com/forms/d/e/1FAIpQLSeaPowt7ku00SvK6ykEAOBPSun59V1UjDE_cMkKSTwUMCJJ-Q/viewform?usp=header" class="nav-link nav-link-cta" target="_blank" rel="noopener" data-i18n="nav_recruitment">Recrutamento</a></li>
+                        <li class="nav-item language-switcher">
+                            <button class="lang-btn active" data-lang="pt" aria-label="Português">PT</button>
+                            <span class="lang-separator">|</span>
+                            <button class="lang-btn" data-lang="en" aria-label="English">EN</button>
+                        </li>
+                    </ul>
+                </div>
+                <div class="hamburger" id="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <div class="container hero-shell">
+                <div class="hero-copy">
+                    <h1 class="hero-title fade-in-up" data-i18n="hero_title">Bem-vindo ao NEAIST</h1>
+                    <p class="hero-subtitle fade-in-up delay-1" data-i18n="hero_subtitle">Núcleo dos Estudantes Africanos do Instituto Superior Técnico</p>
+                    <p class="hero-description fade-in-up delay-2" data-i18n="hero_description">
+                        Unidos pela diversidade, crescemos juntos na excelência académica e cultural
+                    </p>
+                    <a href="https://docs.google.com/forms/d/e/1FAIpQLSeaPowt7ku00SvK6ykEAOBPSun59V1UjDE_cMkKSTwUMCJJ-Q/viewform?usp=header" class="hero-badge fade-in-up delay-3" target="_blank" rel="noopener" data-i18n="hero_recruitment_badge">Recrutamento aberto para colaboradores 2026</a>
+                    <div class="hero-buttons fade-in-up delay-4">
+                        <a href="sobre-nos.html" class="btn btn-primary" data-i18n="hero_btn_about">Conhecer-nos</a>
+                        <a href="contactos.html" class="btn btn-secondary" data-i18n="hero_btn_contact">Contactar</a>
+                    </div>
+                </div>
+                <div class="hero-carousel fade-in-up delay-2" id="heroCarousel">
+                    <a href="dia-de-africa.html" class="hero-slide is-active" data-slide-index="0">
+                        <img src="images/news/dia-de-africa-poster.jpeg" alt="Cartaz do Dia de Africa 2026">
+                        <div class="hero-slide-caption">
+                            <span class="hero-slide-tag" data-i18n="hero_slide_1_tag">Evento em destaque</span>
+                            <h3 data-i18n="hero_slide_1_title">Dia de Africa 2026</h3>
+                            <p data-i18n="hero_slide_1_desc">Cartaz oficial e detalhes da celebracao no Tecnico Innovation Center.</p>
+                        </div>
+                    </a>
+                    <a href="https://docs.google.com/forms/d/e/1FAIpQLSeaPowt7ku00SvK6ykEAOBPSun59V1UjDE_cMkKSTwUMCJJ-Q/viewform?usp=header" class="hero-slide hero-slide-contain" data-slide-index="1" target="_blank" rel="noopener">
+                        <img src="images/news/collaboradores-2026.png" alt="Cartaz de recrutamento NEAIST 2026">
+                        <div class="hero-slide-caption">
+                            <span class="hero-slide-tag" data-i18n="hero_slide_2_tag">Recrutamento</span>
+                            <h3 data-i18n="hero_slide_2_title">Colaboradores 2026</h3>
+                            <p data-i18n="hero_slide_2_desc">Junta-te a equipa do NEAIST e participa na organizacao dos proximos eventos.</p>
+                        </div>
+                    </a>
+                    <a href="noticias.html#tomada-de-posse-2026" class="hero-slide" data-slide-index="2">
+                        <img src="images/news/tomada-posse-2026.jpeg" alt="Tomada de posse NEAIST 2026">
+                        <div class="hero-slide-caption">
+                            <span class="hero-slide-tag" data-i18n="hero_slide_3_tag">Arquivo</span>
+                            <h3 data-i18n="hero_slide_3_title">Tomada de Posse</h3>
+                            <p data-i18n="hero_slide_3_desc">Momento institucional que marca o inicio do novo ciclo do nucleo.</p>
+                        </div>
+                    </a>
+                    <div class="hero-carousel-controls">
+                        <button type="button" class="hero-carousel-btn" data-carousel-action="prev" aria-label="Slide anterior">
+                            <i class="fas fa-chevron-left"></i>
+                        </button>
+                        <div class="hero-carousel-dots" aria-label="Selecionar slide">
+                            <button type="button" class="hero-carousel-dot is-active" data-carousel-dot="0" aria-label="Dia de Africa 2026"></button>
+                            <button type="button" class="hero-carousel-dot" data-carousel-dot="1" aria-label="Colaboradores 2026"></button>
+                            <button type="button" class="hero-carousel-dot" data-carousel-dot="2" aria-label="Tomada de Posse"></button>
+                        </div>
+                        <button type="button" class="hero-carousel-btn" data-carousel-action="next" aria-label="Slide seguinte">
+                            <i class="fas fa-chevron-right"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="hero-scroll">
+            <i class="fas fa-chevron-down"></i>
+        </div>
+    </section>
+
+    <section class="festival-divider">
+        <div class="container festival-divider-content">
+            <div>
+                <span class="section-kicker" data-i18n="africa_day_separator_kicker">Dia de Africa 2026</span>
+                <h2 class="festival-divider-title" data-i18n="africa_day_separator_title">27 de Maio no Tecnico Innovation Center</h2>
+                <p class="festival-divider-text" data-i18n="africa_day_separator_text">Uma tarde dedicada a musica, cultura, convivio e orgulho africano com o cartaz oficial ja disponivel.</p>
+            </div>
+            <a href="dia-de-africa.html" class="btn btn-primary" data-i18n="africa_day_separator_cta">Ver cartaz e detalhes</a>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features" id="features">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title" data-i18n="features_title">O Que Fazemos</h2>
+                <p class="section-subtitle" data-i18n="features_subtitle">Apoiamos a comunidade de estudantes africanos no IST</p>
+            </div>
+            <div class="features-grid">
+                <div class="feature-card fade-in-up">
+                    <div class="feature-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h3 class="feature-title" data-i18n="feature1_title">Comunidade</h3>
+                    <p class="feature-description" data-i18n="feature1_desc">
+                        Criamos um espaço acolhedor para todos os estudantes africanos partilharem experiências e cultura
+                    </p>
+                </div>
+                <div class="feature-card fade-in-up delay-1">
+                    <div class="feature-icon">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <h3 class="feature-title" data-i18n="feature2_title">Apoio Académico</h3>
+                    <p class="feature-description" data-i18n="feature2_desc">
+                        Oferecemos recursos e mentorias para garantir o sucesso académico de todos os membros
+                    </p>
+                </div>
+                <div class="feature-card fade-in-up delay-2">
+                    <div class="feature-icon">
+                        <i class="fas fa-calendar-alt"></i>
+                    </div>
+                    <h3 class="feature-title" data-i18n="feature3_title">Eventos Culturais</h3>
+                    <p class="feature-description" data-i18n="feature3_desc">
+                        Organizamos eventos que celebram a diversidade e riqueza cultural africana
+                    </p>
+                </div>
+                <div class="feature-card fade-in-up delay-3">
+                    <div class="feature-icon">
+                        <i class="fas fa-hands-helping"></i>
+                    </div>
+                    <h3 class="feature-title" data-i18n="feature4_title">Programa Mentorado</h3>
+                    <p class="feature-description" data-i18n="feature4_desc">
+                        Conectamos novos estudantes com veteranos para facilitar a integração
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Recent Highlights Section -->
+    <section class="highlights" id="highlights">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-kicker" data-i18n="highlights_kicker">Atualidade NEAIST</span>
+                <h2 class="section-title" data-i18n="highlights_title">Últimas Notícias</h2>
+                <p class="section-subtitle" data-i18n="highlights_subtitle">
+                    Arquivo vivo com eventos, momentos institucionais e oportunidades atuais do núcleo.
+                </p>
+            </div>
+            <div class="highlights-grid" id="homeNewsPreview"></div>
+            <div class="section-actions">
+                <a href="noticias.html" class="btn btn-primary" data-i18n="news_preview_button">Ver Arquivo Completo</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="stats">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-item">
+                    <div class="stat-number" data-target="500">0</div>
+                    <div class="stat-label" data-i18n="stat1_label">Membros Ativos</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number" data-target="50">0</div>
+                    <div class="stat-label" data-i18n="stat2_label">Eventos por Ano</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number" data-target="15">0</div>
+                    <div class="stat-label" data-i18n="stat3_label">Países Representados</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number" data-target="10">0</div>
+                    <div class="stat-label" data-i18n="stat4_label">Anos de História</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta">
+        <div class="container">
+            <div class="cta-content">
+                <h2 class="cta-title" data-i18n="cta_title">Junta-te a Nós!</h2>
+                <p class="cta-description" data-i18n="cta_description">
+                    Faz parte de uma comunidade vibrante e acolhedora no IST
+                </p>
+                <a href="contactos.html" class="btn btn-light" data-i18n="cta_btn">Entra em Contacto</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-brand">
+                        <img src="images/branding/neaist-logo.png" alt="NEAIST logo" class="footer-brand-logo">
+                        <h3 class="footer-title">NEAIST</h3>
+                    </div>
+                    <p class="footer-description" data-i18n="footer_description">
+                        Núcleo dos Estudantes Africanos do Instituto Superior Técnico
+                    </p>
+                    <div class="social-links">
+                        <a href="https://www.facebook.com/NEAISTECNICO/" class="social-link" aria-label="Facebook" target="_blank" rel="noopener"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://www.instagram.com/nea_ist/" class="social-link" aria-label="Instagram" target="_blank" rel="noopener"><i class="fab fa-instagram"></i></a>
+                        <a href="mailto:neaist.sa@aeist.pt" class="social-link" aria-label="Email"><i class="fas fa-envelope"></i></a>
+                        <a href="https://docs.google.com/forms/d/e/1FAIpQLSeaPowt7ku00SvK6ykEAOBPSun59V1UjDE_cMkKSTwUMCJJ-Q/viewform?usp=header" class="social-link" aria-label="Recruitment" target="_blank" rel="noopener"><i class="fas fa-user-plus"></i></a>
+                    </div>
+                    <div class="footer-tech-mark">
+                        <span class="footer-tech-label" data-i18n="footer_tech_label">Instituto Superior Técnico</span>
+                        <img src="images/branding/tecnico-logo.png" alt="Técnico logo" class="footer-tech-logo">
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4 class="footer-heading">Links Rápidos</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Início</a></li>
+                        <li><a href="sobre-nos.html">Sobre Nós</a></li>
+                        <li><a href="noticias.html">Notícias</a></li>
+                        <li><a href="recursos.html">Recursos</a></li>
+                        <li><a href="contactos.html">Contactos</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4 class="footer-heading">Contacto</h4>
+                    <ul class="footer-contact">
+                        <li><i class="fas fa-envelope"></i> neaist.sa@aeist.pt</li>
+                        <li><i class="fas fa-map-marker-alt"></i> Instituto Superior Técnico, Lisboa</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 NEAIST. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" id="backToTop">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- Custom JS -->
+    <script src="js/languages.js"></script>
+    <script src="js/news-data.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
