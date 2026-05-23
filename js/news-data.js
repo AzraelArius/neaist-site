@@ -44,11 +44,12 @@ const NEWS_ITEMS = [
         date: '2026-05-09',
         categoryId: 'eventos',
         category: 'Eventos',
-        placeholderLabel: 'ULisboa',
+        image: 'images/news/semana-de-africa-ulisboa.jpg',
         title: 'Semana de África / ULisboa',
         excerpt: 'Participação e colaboração em iniciativas ligadas à Semana de África na Universidade de Lisboa.',
         cta: 'Ler mais',
-        url: 'noticias.html#semana-de-africa-ulisboa'
+        url: 'https://www.ulisboa.pt/evento/sem-margem-semana-de-africa-da-ulisboa',
+        external: true
     },
     {
         slug: 'rtp-africa-30-anos',

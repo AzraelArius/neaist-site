@@ -32,6 +32,7 @@
                         <li class="nav-item"><a href="sobre-nos.html" class="nav-link" data-i18n="nav_about">Sobre Nós</a></li>
                         <li class="nav-item"><a href="equipa.html" class="nav-link" data-i18n="nav_team">Equipa</a></li>
                         <li class="nav-item"><a href="noticias.html" class="nav-link" data-i18n="nav_news">Notícias</a></li>
+                        <li class="nav-item"><a href="galeria.html" class="nav-link" data-i18n="nav_gallery">Galeria</a></li>
                         <li class="nav-item"><a href="recursos.html" class="nav-link" data-i18n="nav_resources">Recursos</a></li>
                         <li class="nav-item"><a href="guia-caloiro.html" class="nav-link" data-i18n="nav_guide">Guia do Caloiro</a></li>
                         <li class="nav-item"><a href="mentoria.html" class="nav-link" data-i18n="nav_mentoring">Programa Mentorado</a></li>
@@ -64,37 +65,18 @@
     <!-- Contact Section -->
     <section class="contact-section">
         <div class="container">
-            <div class="contact-grid">
-                <!-- Contact Form -->
-                <div class="contact-form-container fade-in-up">
-                    <h2 data-i18n="contact_form_title">Envie-nos uma Mensagem</h2>
-                    <form class="contact-form" id="contactForm">
-                        <div class="form-group">
-                            <label for="name" data-i18n="form_name">Nome Completo *</label>
-                            <input type="text" id="name" name="name" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="email" data-i18n="form_email">Email *</label>
-                            <input type="email" id="email" name="email" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="subject" data-i18n="form_subject">Assunto *</label>
-                            <input type="text" id="subject" name="subject" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="message" data-i18n="form_message">Mensagem *</label>
-                            <textarea id="message" name="message" rows="5" required></textarea>
-                        </div>
-                        <button type="submit" class="btn btn-primary">
-                            <i class="fas fa-paper-plane"></i> <span data-i18n="form_submit">Enviar Mensagem</span>
-                        </button>
-                    </form>
+            <div class="contact-grid contact-grid-direct">
+                <div class="contact-direct-copy fade-in-up">
+                    <span class="section-kicker">Contacto direto</span>
+                    <h2 data-i18n="contact_direct_title">Fala connosco</h2>
+                    <p data-i18n="contact_direct_intro">Para dúvidas, parcerias ou informações sobre as nossas atividades, usa um dos canais abaixo.</p>
+                    <div class="contact-action-row">
+                        <a href="mailto:neaist.sa@aeist.pt" class="btn btn-primary">Enviar email</a>
+                        <a href="https://www.instagram.com/nea_ist/" class="btn btn-secondary" target="_blank" rel="noopener">Instagram</a>
+                    </div>
                 </div>
 
-                <!-- Contact Info -->
                 <div class="contact-info fade-in-up delay-1">
-                    <h2 data-i18n="contact_info_title">Informações de Contacto</h2>
-                    
                     <div class="info-card">
                         <div class="info-icon">
                             <i class="fas fa-envelope"></i>
@@ -102,63 +84,21 @@
                         <div class="info-content">
                             <h4 data-i18n="contact_email_title">Email</h4>
                             <p>neaist.sa@aeist.pt</p>
+                            <p data-i18n="contact_email_text">Escreve-nos diretamente para esclarecimentos, propostas ou contacto institucional.</p>
                         </div>
                     </div>
 
                     <div class="info-card">
                         <div class="info-icon">
-                            <i class="fas fa-map-marker-alt"></i>
+                            <i class="fab fa-instagram"></i>
                         </div>
                         <div class="info-content">
-                            <h4 data-i18n="contact_location_title">Localização</h4>
-                            <p><span data-i18n="contact_location_text">Instituto Superior Técnico</span><br><span data-i18n="contact_location_address">Av. Rovisco Pais, 1049-001 Lisboa</span></p>
-                        </div>
-                    </div>
-
-                    <div class="info-card">
-                        <div class="info-icon">
-                            <i class="fas fa-clock"></i>
-                        </div>
-                        <div class="info-content">
-                            <h4 data-i18n="contact_hours_title">Horário</h4>
-                            <p><span data-i18n="contact_hours_text">Segunda a Sexta: 10h - 18h</span><br><span data-i18n="contact_hours_weekend">Fins de semana: Eventos especiais</span></p>
-                        </div>
-                    </div>
-
-                    <div class="social-connect">
-                        <h3 data-i18n="contact_social_title">Redes Sociais</h3>
-                        <div class="social-links-large">
-                            <a href="https://www.facebook.com/NEAISTECNICO/" class="social-link-large" aria-label="Facebook" target="_blank" rel="noopener">
-                                <i class="fab fa-facebook-f"></i>
-                                <span>Facebook</span>
-                            </a>
-                            <a href="https://www.instagram.com/nea_ist/" class="social-link-large" aria-label="Instagram" target="_blank" rel="noopener">
-                                <i class="fab fa-instagram"></i>
-                                <span>Instagram</span>
-                            </a>
-                            <a href="mailto:neaist.sa@aeist.pt" class="social-link-large" aria-label="Email">
-                                <i class="fas fa-envelope"></i>
-                                <span>Email</span>
-                            </a>
-                            <a href="https://docs.google.com/forms/d/e/1FAIpQLSeaPowt7ku00SvK6ykEAOBPSun59V1UjDE_cMkKSTwUMCJJ-Q/viewform?usp=header" class="social-link-large" aria-label="Recruitment" target="_blank" rel="noopener">
-                                <i class="fas fa-user-plus"></i>
-                                <span>Recruitment</span>
-                            </a>
+                            <h4 data-i18n="contact_instagram_title">Instagram</h4>
+                            <p>@nea_ist</p>
+                            <p data-i18n="contact_instagram_text">Envia-nos mensagem direta e acompanha as nossas novidades.</p>
                         </div>
                     </div>
                 </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Map Section (Optional) -->
-    <section class="map-section">
-        <div class="container">
-            <h2 class="section-title">Como Chegar</h2>
-            <div class="map-placeholder">
-                <i class="fas fa-map-marked-alt fa-3x"></i>
-                <p>Instituto Superior Técnico, Lisboa</p>
-                <p class="map-hint">Alameda Campus - Av. Rovisco Pais, 1049-001 Lisboa</p>
             </div>
         </div>
     </section>
@@ -193,6 +133,7 @@
                         <li><a href="sobre-nos.html">Sobre Nós</a></li>
                         <li><a href="equipa.html">Equipa</a></li>
                         <li><a href="noticias.html">Notícias</a></li>
+                        <li><a href="galeria.html">Galeria</a></li>
                         <li><a href="recursos.html">Recursos</a></li>
                         <li><a href="contactos.html">Contactos</a></li>
                     </ul>

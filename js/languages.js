@@ -11,6 +11,7 @@ const translations = {
         nav_about: "Sobre Nós",
         nav_team: "Equipa",
         nav_news: "Notícias",
+        nav_gallery: "Galeria",
         nav_resources: "Recursos",
         nav_guide: "Guia do Caloiro",
         nav_mentoring: "Programa Mentorado",
@@ -169,6 +170,11 @@ const translations = {
         // Contact Page
         contact_title: "Contactos",
         contact_subtitle: "Estamos aqui para ajudar. Entre em contacto connosco!",
+        contact_direct_title: "Fala connosco",
+        contact_direct_intro: "Para dúvidas, parcerias ou informações sobre as nossas atividades, usa um dos canais abaixo.",
+        contact_instagram_title: "Instagram",
+        contact_instagram_text: "Envia-nos mensagem direta e acompanha as nossas novidades.",
+        contact_email_text: "Escreve-nos diretamente para esclarecimentos, propostas ou contacto institucional.",
         contact_form_title: "Envie-nos uma Mensagem",
         contact_info_title: "Informações de Contacto",
         
@@ -293,6 +299,7 @@ const translations = {
         nav_about: "About Us",
         nav_team: "Team",
         nav_news: "News",
+        nav_gallery: "Gallery",
         nav_resources: "Resources",
         nav_guide: "Freshman Guide",
         nav_mentoring: "Mentoring Program",

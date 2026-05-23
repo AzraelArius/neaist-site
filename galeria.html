@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Galeria fotográfica do NEAIST">
+    <title>Galeria - NEAIST</title>
+
+    <link rel="icon" type="image/png" href="images/branding/neaist-logo.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Poppins:wght@600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animations.css">
+</head>
+<body>
+    <nav class="navbar" id="navbar">
+        <div class="container">
+            <div class="nav-wrapper">
+                <a href="index.html" class="logo">
+                    <span class="logo-mark">
+                        <img src="images/branding/neaist-logo.png" alt="NEAIST logo">
+                    </span>
+                    <span class="logo-text-group">
+                        <span class="logo-text">NEAIST</span>
+                        <span class="logo-subtext" data-i18n="logo_subtext">Núcleo de Estudantes Africanos no Instituto Superior Técnico</span>
+                    </span>
+                </a>
+                <div class="nav-menu" id="navMenu">
+                    <ul class="nav-list">
+                        <li class="nav-item"><a href="index.html" class="nav-link" data-i18n="nav_home">Início</a></li>
+                        <li class="nav-item"><a href="sobre-nos.html" class="nav-link" data-i18n="nav_about">Sobre Nós</a></li>
+                        <li class="nav-item"><a href="equipa.html" class="nav-link" data-i18n="nav_team">Equipa</a></li>
+                        <li class="nav-item"><a href="noticias.html" class="nav-link" data-i18n="nav_news">Notícias</a></li>
+                        <li class="nav-item"><a href="galeria.html" class="nav-link active" data-i18n="nav_gallery">Galeria</a></li>
+                        <li class="nav-item"><a href="recursos.html" class="nav-link" data-i18n="nav_resources">Recursos</a></li>
+                        <li class="nav-item"><a href="guia-caloiro.html" class="nav-link" data-i18n="nav_guide">Guia do Caloiro</a></li>
+                        <li class="nav-item"><a href="mentoria.html" class="nav-link" data-i18n="nav_mentoring">Programa Mentorado</a></li>
+                        <li class="nav-item"><a href="contactos.html" class="nav-link" data-i18n="nav_contact">Contactos</a></li>
+                        <li class="nav-item"><a href="https://docs.google.com/forms/d/e/1FAIpQLSeaPowt7ku00SvK6ykEAOBPSun59V1UjDE_cMkKSTwUMCJJ-Q/viewform?usp=header" class="nav-link nav-link-cta" target="_blank" rel="noopener" data-i18n="nav_recruitment">Recrutamento</a></li>
+                        <li class="nav-item language-switcher">
+                            <button class="lang-btn active" data-lang="pt" aria-label="Português">PT</button>
+                            <span class="lang-separator">|</span>
+                            <button class="lang-btn lang-btn-disabled" data-lang="en" aria-label="English" disabled aria-disabled="true">EN</button>
+                        </li>
+                    </ul>
+                </div>
+                <div class="hamburger" id="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <section class="page-header">
+        <div class="container">
+            <h1 class="page-title fade-in-up">Galeria</h1>
+            <p class="page-subtitle fade-in-up delay-1">Arquivo visual do NEAIST com momentos institucionais, eventos culturais, recrutamento e atividades recentes.</p>
+        </div>
+    </section>
+
+    <section class="gallery-section">
+        <div class="container">
+            <div class="gallery-overview fade-in-up">
+                <div>
+                    <span class="section-kicker">Arquivo fotográfico</span>
+                    <h2 class="section-title">Momentos da comunidade NEAIST</h2>
+                    <p class="section-subtitle">Explora as imagens já reunidas do mandato de 2026, incluindo cerimónias, eventos, cartazes e materiais visuais do núcleo.</p>
+                </div>
+                <span class="gallery-count" id="galleryCount">0 imagens</span>
+            </div>
+            <div class="gallery-masonry" id="galleryGrid"></div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-brand">
+                        <img src="images/branding/neaist-logo.png" alt="NEAIST logo" class="footer-brand-logo">
+                        <h3 class="footer-title">NEAIST</h3>
+                    </div>
+                    <p class="footer-description">
+                        Núcleo dos Estudantes Africanos do Instituto Superior Técnico
+                    </p>
+                    <div class="social-links">
+                        <a href="https://www.facebook.com/NEAISTECNICO/" class="social-link" aria-label="Facebook" target="_blank" rel="noopener"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://www.instagram.com/nea_ist/" class="social-link" aria-label="Instagram" target="_blank" rel="noopener"><i class="fab fa-instagram"></i></a>
+                        <a href="mailto:neaist.sa@aeist.pt" class="social-link" aria-label="Email"><i class="fas fa-envelope"></i></a>
+                        <a href="https://docs.google.com/forms/d/e/1FAIpQLSeaPowt7ku00SvK6ykEAOBPSun59V1UjDE_cMkKSTwUMCJJ-Q/viewform?usp=header" class="social-link" aria-label="Recruitment" target="_blank" rel="noopener"><i class="fas fa-user-plus"></i></a>
+                    </div>
+                    <div class="footer-tech-mark">
+                        <span class="footer-tech-label" data-i18n="footer_tech_label">Instituto Superior Técnico</span>
+                        <img src="images/branding/tecnico-logo.png" alt="Técnico logo" class="footer-tech-logo">
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4 class="footer-heading">Links Rápidos</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Início</a></li>
+                        <li><a href="sobre-nos.html">Sobre Nós</a></li>
+                        <li><a href="equipa.html">Equipa</a></li>
+                        <li><a href="noticias.html">Notícias</a></li>
+                        <li><a href="galeria.html">Galeria</a></li>
+                        <li><a href="recursos.html">Recursos</a></li>
+                        <li><a href="contactos.html">Contactos</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4 class="footer-heading">Contacto</h4>
+                    <ul class="footer-contact">
+                        <li><i class="fas fa-envelope"></i> neaist.sa@aeist.pt</li>
+                        <li><i class="fas fa-map-marker-alt"></i> Instituto Superior Técnico, Lisboa</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 NEAIST. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <button class="back-to-top" id="backToTop">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script src="js/languages.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/gallery-data.js"></script>
+</body>
+</html>
