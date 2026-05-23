@@ -83,6 +83,17 @@ const NEWS_ITEMS = [
         excerpt: 'Um momento informal de convívio, integração e comunidade entre estudantes.',
         cta: 'Ler mais',
         url: 'noticias.html#game-afternoon'
+    },
+    {
+        slug: 'tomada-de-posse-2024-2025',
+        date: '2025-02-17',
+        categoryId: 'arquivo',
+        category: 'Arquivo',
+        image: 'images/news/tomada-posse-2024-2025.jpeg',
+        title: 'Tomada de Posse - Mandato 2024/2025',
+        excerpt: 'Cerimónia que marcou o início do mandato de 2024/2025, com tomada de posse dos órgãos sociais e presença da comunidade académica.',
+        cta: 'Ler mais',
+        url: 'galeria.html#tomada-posse-2024-2025'
     }
 ];
 
