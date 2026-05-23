@@ -9,6 +9,7 @@ const translations = {
         logo_subtext: "Núcleo de Estudantes Africanos no Instituto Superior Técnico",
         nav_home: "Início",
         nav_about: "Sobre Nós",
+        nav_team: "Equipa",
         nav_news: "Notícias",
         nav_resources: "Recursos",
         nav_guide: "Guia do Caloiro",
@@ -27,17 +28,17 @@ const translations = {
         features_title: "O Que Fazemos",
         features_subtitle: "Apoiamos a comunidade de estudantes africanos no IST",
         hero_slide_1_tag: "Evento em destaque",
-        hero_slide_1_title: "Dia de Africa 2026",
-        hero_slide_1_desc: "Cartaz oficial e detalhes da celebracao no Tecnico Innovation Center.",
+        hero_slide_1_title: "Dia de África 2026",
+        hero_slide_1_desc: "Cartaz oficial e detalhes da celebração no Técnico Innovation Center.",
         hero_slide_2_tag: "Recrutamento",
         hero_slide_2_title: "Colaboradores 2026",
-        hero_slide_2_desc: "Junta-te a equipa do NEAIST e participa na organizacao dos proximos eventos.",
+        hero_slide_2_desc: "Junta-te à equipa do NEAIST e participa na organização dos próximos eventos.",
         hero_slide_3_tag: "Arquivo",
         hero_slide_3_title: "Tomada de Posse",
-        hero_slide_3_desc: "Momento institucional que marca o inicio do novo ciclo do nucleo.",
-        africa_day_separator_kicker: "Dia de Africa 2026",
-        africa_day_separator_title: "27 de Maio no Tecnico Innovation Center",
-        africa_day_separator_text: "Uma tarde dedicada a musica, cultura, convivio e orgulho africano com o cartaz oficial ja disponivel.",
+        hero_slide_3_desc: "Momento institucional que marca o início do novo ciclo do núcleo.",
+        africa_day_separator_kicker: "Dia de África 2026",
+        africa_day_separator_title: "27 de Maio no Técnico Innovation Center",
+        africa_day_separator_text: "Uma tarde dedicada à música, cultura, convívio e orgulho africano, com o cartaz oficial já disponível.",
         africa_day_separator_cta: "Ver cartaz e detalhes",
 
         // Recent Highlights
@@ -290,6 +291,7 @@ const translations = {
         logo_subtext: "African Students at Técnico",
         nav_home: "Home",
         nav_about: "About Us",
+        nav_team: "Team",
         nav_news: "News",
         nav_resources: "Resources",
         nav_guide: "Freshman Guide",
@@ -568,10 +570,15 @@ const translations = {
 };
 
 // Language management
-let currentLanguage = localStorage.getItem('language') || 'pt';
+let currentLanguage = 'pt';
 window.currentLanguage = currentLanguage;
+localStorage.setItem('language', 'pt');
 
 function setLanguage(lang) {
+    if (lang !== 'pt') {
+        return;
+    }
+
     currentLanguage = lang;
     window.currentLanguage = currentLanguage;
     localStorage.setItem('language', lang);
@@ -617,7 +624,7 @@ document.addEventListener('DOMContentLoaded', function() {
     updateLanguageButton();
     
     // Add language switcher event listeners
-    document.querySelectorAll('.lang-btn').forEach(btn => {
+    document.querySelectorAll('.lang-btn:not([disabled])').forEach(btn => {
         btn.addEventListener('click', (e) => {
             e.preventDefault();
             const lang = btn.getAttribute('data-lang');

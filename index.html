@@ -41,6 +41,7 @@
                     <ul class="nav-list">
                         <li class="nav-item"><a href="index.html" class="nav-link active" data-i18n="nav_home">Início</a></li>
                         <li class="nav-item"><a href="sobre-nos.html" class="nav-link" data-i18n="nav_about">Sobre Nós</a></li>
+                        <li class="nav-item"><a href="equipa.html" class="nav-link" data-i18n="nav_team">Equipa</a></li>
                         <li class="nav-item"><a href="noticias.html" class="nav-link" data-i18n="nav_news">Notícias</a></li>
                         <li class="nav-item"><a href="recursos.html" class="nav-link" data-i18n="nav_resources">Recursos</a></li>
                         <li class="nav-item"><a href="guia-caloiro.html" class="nav-link" data-i18n="nav_guide">Guia do Caloiro</a></li>
@@ -50,7 +51,7 @@
                         <li class="nav-item language-switcher">
                             <button class="lang-btn active" data-lang="pt" aria-label="Português">PT</button>
                             <span class="lang-separator">|</span>
-                            <button class="lang-btn" data-lang="en" aria-label="English">EN</button>
+                            <button class="lang-btn lang-btn-disabled" data-lang="en" aria-label="English" disabled aria-disabled="true">EN</button>
                         </li>
                     </ul>
                 </div>
@@ -69,15 +70,28 @@
         <div class="hero-content">
             <div class="container hero-shell">
                 <div class="hero-copy">
-                    <h1 class="hero-title fade-in-up" data-i18n="hero_title">Bem-vindo ao NEAIST</h1>
-                    <p class="hero-subtitle fade-in-up delay-1" data-i18n="hero_subtitle">Núcleo dos Estudantes Africanos do Instituto Superior Técnico</p>
-                    <p class="hero-description fade-in-up delay-2" data-i18n="hero_description">
-                        Unidos pela diversidade, crescemos juntos na excelência académica e cultural
+                    <span class="hero-kicker fade-in-up">NEAIST 2026</span>
+                    <h1 class="hero-title fade-in-up delay-1">Comunidade, cultura e apoio académico no Técnico</h1>
+                    <p class="hero-description fade-in-up delay-2">
+                        O Núcleo de Estudantes Africanos do Instituto Superior Técnico promove a integração, o apoio académico, a cultura e a representação dos estudantes africanos na comunidade académica.
                     </p>
-                    <a href="https://docs.google.com/forms/d/e/1FAIpQLSeaPowt7ku00SvK6ykEAOBPSun59V1UjDE_cMkKSTwUMCJJ-Q/viewform?usp=header" class="hero-badge fade-in-up delay-3" target="_blank" rel="noopener" data-i18n="hero_recruitment_badge">Recrutamento aberto para colaboradores 2026</a>
+                    <div class="hero-pill-grid fade-in-up delay-3">
+                        <div class="hero-pill-card">
+                            <i class="fas fa-book-open"></i>
+                            <span>Integração académica</span>
+                        </div>
+                        <div class="hero-pill-card">
+                            <i class="fas fa-music"></i>
+                            <span>Eventos culturais</span>
+                        </div>
+                        <div class="hero-pill-card">
+                            <i class="fas fa-hands-helping"></i>
+                            <span>Apoio entre estudantes</span>
+                        </div>
+                    </div>
                     <div class="hero-buttons fade-in-up delay-4">
-                        <a href="sobre-nos.html" class="btn btn-primary" data-i18n="hero_btn_about">Conhecer-nos</a>
-                        <a href="contactos.html" class="btn btn-secondary" data-i18n="hero_btn_contact">Contactar</a>
+                        <a href="equipa.html" class="btn btn-primary">Conhecer a Equipa</a>
+                        <a href="https://docs.google.com/forms/d/e/1FAIpQLSeaPowt7ku00SvK6ykEAOBPSun59V1UjDE_cMkKSTwUMCJJ-Q/viewform?usp=header" class="btn btn-secondary" target="_blank" rel="noopener">Juntar-me ao NEAIST</a>
                     </div>
                 </div>
                 <div class="hero-carousel fade-in-up delay-2" id="heroCarousel">
@@ -202,25 +216,29 @@
         </div>
     </section>
 
-    <!-- Stats Section -->
-    <section class="stats">
+    <section class="impact-section">
         <div class="container">
-            <div class="stats-grid">
-                <div class="stat-item">
-                    <div class="stat-number" data-target="500">0</div>
-                    <div class="stat-label" data-i18n="stat1_label">Membros Ativos</div>
+            <div class="section-header">
+                <span class="section-kicker">Missão em ação</span>
+                <h2 class="section-title">Uma presença estudantil ativa no Técnico</h2>
+                <p class="section-subtitle">O NEAIST combina representação, acolhimento e programação cultural com foco na vida académica e comunitária.</p>
+            </div>
+            <div class="impact-grid">
+                <div class="impact-card fade-in-up">
+                    <h3>Comunidade ativa</h3>
+                    <p>Um espaço de encontro, partilha e proximidade entre estudantes africanos e toda a comunidade académica.</p>
                 </div>
-                <div class="stat-item">
-                    <div class="stat-number" data-target="50">0</div>
-                    <div class="stat-label" data-i18n="stat2_label">Eventos por Ano</div>
+                <div class="impact-card fade-in-up delay-1">
+                    <h3>Eventos culturais e académicos</h3>
+                    <p>Iniciativas que valorizam a cultura africana, a integração no campus e o enriquecimento académico.</p>
                 </div>
-                <div class="stat-item">
-                    <div class="stat-number" data-target="15">0</div>
-                    <div class="stat-label" data-i18n="stat3_label">Países Representados</div>
+                <div class="impact-card fade-in-up delay-2">
+                    <h3>Representação estudantil</h3>
+                    <p>Participação institucional e associativa para dar voz às necessidades e ambições dos estudantes.</p>
                 </div>
-                <div class="stat-item">
-                    <div class="stat-number" data-target="10">0</div>
-                    <div class="stat-label" data-i18n="stat4_label">Anos de História</div>
+                <div class="impact-card fade-in-up delay-3">
+                    <h3>Apoio à integração</h3>
+                    <p>Orientação, partilha de recursos e ligação entre estudantes para uma transição mais segura e acolhedora.</p>
                 </div>
             </div>
         </div>
@@ -267,6 +285,7 @@
                     <ul class="footer-links">
                         <li><a href="index.html">Início</a></li>
                         <li><a href="sobre-nos.html">Sobre Nós</a></li>
+                        <li><a href="equipa.html">Equipa</a></li>
                         <li><a href="noticias.html">Notícias</a></li>
                         <li><a href="recursos.html">Recursos</a></li>
                         <li><a href="contactos.html">Contactos</a></li>

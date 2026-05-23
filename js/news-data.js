@@ -1,153 +1,197 @@
 // ===================================
-// NEAIST Website - News Data & Rendering
-// Add new images to /images/news and a new item to NEWS_ITEMS.
+// NEAIST Website - News Data & Archive
+// Shared source for homepage previews and the archive page.
 // ===================================
 
 const NEWS_ITEMS = [
     {
         slug: 'dia-de-africa-2026',
         date: '2026-05-23',
+        categoryId: 'eventos',
+        category: 'Eventos',
         image: 'images/news/dia-de-africa-poster.jpeg',
-        category: {
-            pt: 'Evento',
-            en: 'Event'
-        },
-        title: {
-            pt: 'Dia de Africa no Tecnico',
-            en: 'Africa Day at Tecnico'
-        },
-        excerpt: {
-            pt: 'No dia 27 de maio, o NEAIST celebra o Dia de Africa no Tecnico Innovation Center com musica, cultura, convivio e orgulho africano.',
-            en: 'On May 27, NEAIST celebrates Africa Day at Tecnico Innovation Center with music, culture, community, and African pride.'
-        },
-        cta: {
-            pt: 'Ver evento',
-            en: 'View event'
-        },
+        title: 'Dia de África no Técnico',
+        excerpt: 'Uma celebração da cultura, identidade e comunidade africana no Técnico Innovation Center.',
+        cta: 'Ler mais',
         url: 'dia-de-africa.html'
     },
     {
-        slug: 'recruitment-2026',
+        slug: 'recrutamento-colaboradores-2026',
         date: '2026-05-22',
+        categoryId: 'oportunidades',
+        category: 'Oportunidades',
         image: 'images/news/collaboradores-2026.png',
-        category: {
-            pt: 'Recrutamento',
-            en: 'Recruitment'
-        },
-        title: {
-            pt: 'Recrutamento Aberto para Colaboradores',
-            en: 'Open Recruitment for Collaborators'
-        },
-        excerpt: {
-            pt: 'O NEAIST está a reforçar a equipa. Procuramos colaboradores com vontade de contribuir para eventos, comunicação, apoio à comunidade e crescimento do núcleo.',
-            en: 'NEAIST is expanding its team. We are looking for collaborators ready to contribute to events, communication, community support, and the growth of the association.'
-        },
-        cta: {
-            pt: 'Candidatar-me',
-            en: 'Apply Now'
-        },
         mediaFit: 'contain',
+        title: 'Recrutamento de Colaboradores 2026',
+        excerpt: 'Estão abertas as inscrições para estudantes que queiram colaborar com o NEAIST.',
+        cta: 'Ler mais',
         url: 'https://docs.google.com/forms/d/e/1FAIpQLSeaPowt7ku00SvK6ykEAOBPSun59V1UjDE_cMkKSTwUMCJJ-Q/viewform?usp=header',
         external: true
     },
     {
+        slug: 'faist-2026',
+        date: '2026-05-16',
+        categoryId: 'institucional',
+        category: 'Institucional',
+        placeholderLabel: 'FAIST',
+        title: 'Participação no FAIST',
+        excerpt: 'O NEAIST participou no Fórum Associativo do IST, reforçando a sua presença no associativismo estudantil.',
+        cta: 'Ler mais',
+        url: 'noticias.html#faist-2026'
+    },
+    {
+        slug: 'semana-de-africa-ulisboa',
+        date: '2026-05-09',
+        categoryId: 'eventos',
+        category: 'Eventos',
+        placeholderLabel: 'ULisboa',
+        title: 'Semana de África / ULisboa',
+        excerpt: 'Participação e colaboração em iniciativas ligadas à Semana de África na Universidade de Lisboa.',
+        cta: 'Ler mais',
+        url: 'noticias.html#semana-de-africa-ulisboa'
+    },
+    {
         slug: 'rtp-africa-30-anos',
         date: '2026-04-12',
+        categoryId: 'arquivo',
+        category: 'Arquivo',
         image: 'images/news/rtp-30-years.jpeg',
-        category: {
-            pt: 'Representação',
-            en: 'Representation'
-        },
-        title: {
-            pt: 'RTP África 30 Anos na Gulbenkian',
-            en: 'RTP África 30 Years at Gulbenkian'
-        },
-        excerpt: {
-            pt: 'Participação do núcleo num evento de forte projeção pública, reforçando as pontes entre estudantes, cultura africana e instituições parceiras em Lisboa.',
-            en: 'The association took part in a high-visibility public event, strengthening ties between students, African culture, and partner institutions in Lisbon.'
-        }
+        title: 'RTP África 30 Anos na Gulbenkian',
+        excerpt: 'Participação do NEAIST num momento de visibilidade pública e representação estudantil ligado aos 30 anos da RTP África.',
+        cta: 'Ler mais',
+        url: 'noticias.html#rtp-africa-30-anos'
     },
     {
         slug: 'tomada-de-posse-2026',
         date: '2026-03-27',
+        categoryId: 'institucional',
+        category: 'Institucional',
         image: 'images/news/tomada-posse-2026-2.jpeg',
-        category: {
-            pt: 'Institucional',
-            en: 'Institutional'
-        },
-        title: {
-            pt: 'Tomada de Posse dos Órgãos Sociais do NEAIST',
-            en: 'NEAIST Inauguration Ceremony'
-        },
-        excerpt: {
-            pt: 'A nova direção assume funções num momento importante para a continuidade do trabalho associativo, com foco em representação, integração e programação cultural.',
-            en: 'The new board takes office in an important moment for the continuity of NEAIST’s work, with a focus on representation, integration, and cultural programming.'
-        }
+        title: 'Tomada de Posse da Direção 2026',
+        excerpt: 'O NEAIST iniciou um novo ciclo de trabalho com a tomada de posse dos seus órgãos sociais para 2026.',
+        cta: 'Ler mais',
+        url: 'noticias.html#tomada-de-posse-2026'
+    },
+    {
+        slug: 'game-afternoon',
+        date: '2026-02-18',
+        categoryId: 'eventos',
+        category: 'Eventos',
+        placeholderLabel: 'Game Afternoon',
+        title: 'Game Afternoon',
+        excerpt: 'Um momento informal de convívio, integração e comunidade entre estudantes.',
+        cta: 'Ler mais',
+        url: 'noticias.html#game-afternoon'
     }
 ];
 
-function getNewsLanguage() {
-    return window.currentLanguage || 'pt';
-}
+let activeNewsFilter = 'todos';
 
 function sortNewsItems() {
     return [...NEWS_ITEMS].sort((a, b) => b.date.localeCompare(a.date));
 }
 
-function formatNewsDate(dateString, language) {
-    const locale = language === 'en' ? 'en-GB' : 'pt-PT';
-    return new Intl.DateTimeFormat(locale, {
+function formatNewsDate(dateString) {
+    return new Intl.DateTimeFormat('pt-PT', {
         day: '2-digit',
         month: 'long',
         year: 'numeric'
     }).format(new Date(`${dateString}T12:00:00`));
 }
 
-function renderNewsCard(item, language, showButton) {
-    const title = item.title[language] || item.title.pt;
-    const category = item.category[language] || item.category.pt;
-    const excerpt = item.excerpt[language] || item.excerpt.pt;
-    const cta = item.cta ? (item.cta[language] || item.cta.pt) : null;
+function renderNewsMedia(item) {
+    if (item.image) {
+        return `
+            <div class="highlight-media ${item.mediaFit === 'contain' ? 'highlight-media-contain' : ''}">
+                <img src="${item.image}" alt="${item.title}">
+            </div>
+        `;
+    }
+
+    return `
+        <div class="highlight-media highlight-media-placeholder">
+            <span class="placeholder-pill">${item.category}</span>
+            <strong>${item.placeholderLabel || 'NEAIST'}</strong>
+            <p>${item.title}</p>
+        </div>
+    `;
+}
+
+function renderNewsCard(item, showButton = true) {
     const href = item.url || `noticias.html#${item.slug}`;
     const target = item.external ? ' target="_blank" rel="noopener"' : '';
 
     return `
-        <article class="highlight-card ${showButton ? '' : 'highlight-card-compact'} fade-in-up" id="${item.slug}">
-            <div class="highlight-media ${item.mediaFit === 'contain' ? 'highlight-media-contain' : ''}">
-                <img src="${item.image}" alt="${title}">
-            </div>
+        <article class="highlight-card ${showButton ? '' : 'highlight-card-compact'} fade-in-up" id="${item.slug}" data-category="${item.categoryId}">
+            ${renderNewsMedia(item)}
             <div class="highlight-body">
-                <span class="highlight-tag">${category}</span>
-                <p class="news-date">${formatNewsDate(item.date, language)}</p>
-                <h3 class="highlight-title">${title}</h3>
-                <p class="highlight-description">${excerpt}</p>
-                ${showButton && cta ? `<a class="news-card-link" href="${href}"${target}>${cta}</a>` : ''}
+                <span class="highlight-tag">${item.category}</span>
+                <p class="news-date">${formatNewsDate(item.date)}</p>
+                <h3 class="highlight-title">${item.title}</h3>
+                <p class="highlight-description">${item.excerpt}</p>
+                ${showButton ? `<a class="news-card-link" href="${href}"${target}>${item.cta || 'Ler mais'}</a>` : ''}
             </div>
         </article>
     `;
 }
 
-function renderNewsSections() {
-    const language = getNewsLanguage();
-    const items = sortNewsItems();
-
+function renderHomepageNews() {
     const homeContainer = document.getElementById('homeNewsPreview');
-    if (homeContainer) {
-        homeContainer.innerHTML = items.slice(0, 3).map((item, index) => {
-            const markup = renderNewsCard(item, language, Boolean(item.cta));
-            return markup.replace('fade-in-up', `fade-in-up${index ? ` delay-${index}` : ''}`);
-        }).join('');
+
+    if (!homeContainer) {
+        return;
     }
 
+    const items = sortNewsItems().slice(0, 3);
+    homeContainer.innerHTML = items.map((item, index) => {
+        const markup = renderNewsCard(item, true);
+        return markup.replace('fade-in-up', `fade-in-up${index ? ` delay-${index}` : ''}`);
+    }).join('');
+}
+
+function renderArchiveNews() {
     const archiveContainer = document.getElementById('newsArchive');
-    if (archiveContainer) {
-        archiveContainer.innerHTML = items.map((item, index) => {
-            const markup = renderNewsCard(item, language, Boolean(item.cta));
-            return markup.replace('fade-in-up', `fade-in-up${index % 3 ? ` delay-${index % 3}` : ''}`);
-        }).join('');
+
+    if (!archiveContainer) {
+        return;
     }
+
+    const items = sortNewsItems().filter((item) => {
+        return activeNewsFilter === 'todos' || item.categoryId === activeNewsFilter;
+    });
+
+    archiveContainer.innerHTML = items.map((item, index) => {
+        const markup = renderNewsCard(item, true);
+        return markup.replace('fade-in-up', `fade-in-up${index % 3 ? ` delay-${index % 3}` : ''}`);
+    }).join('');
+}
+
+function initNewsFilters() {
+    const filterButtons = document.querySelectorAll('.news-filter-btn');
+
+    if (!filterButtons.length) {
+        return;
+    }
+
+    filterButtons.forEach((button) => {
+        button.addEventListener('click', () => {
+            activeNewsFilter = button.getAttribute('data-filter') || 'todos';
+
+            filterButtons.forEach((item) => item.classList.remove('active'));
+            button.classList.add('active');
+            renderArchiveNews();
+        });
+    });
+}
+
+function renderNewsSections() {
+    renderHomepageNews();
+    renderArchiveNews();
 }
 
 window.renderNewsSections = renderNewsSections;
 
-document.addEventListener('DOMContentLoaded', renderNewsSections);
+document.addEventListener('DOMContentLoaded', () => {
+    renderNewsSections();
+    initNewsFilters();
+});
