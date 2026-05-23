@@ -53,7 +53,7 @@ const NEWS_ITEMS = [
     {
         slug: 'rtp-africa-30-anos',
         date: '2026-04-12',
-        image: 'images/news/rtp-africa-30-anos.jpeg',
+        image: 'images/news/rtp-30-years.jpeg',
         category: {
             pt: 'Representação',
             en: 'Representation'
@@ -70,7 +70,7 @@ const NEWS_ITEMS = [
     {
         slug: 'tomada-de-posse-2026',
         date: '2026-03-27',
-        image: 'images/news/tomada-posse-2026.jpeg',
+        image: 'images/news/tomada-posse-2026-2.jpeg',
         category: {
             pt: 'Institucional',
             en: 'Institutional'
