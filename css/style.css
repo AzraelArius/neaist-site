@@ -2915,6 +2915,41 @@ section {
     color: var(--primary-dark);
 }
 
+/* ========== Post-Hero Sand Sections ========== */
+.hero + .festival-divider,
+.hero + .festival-divider + .features,
+.page-header + section,
+.study-hero + .study-content-shell,
+.event-hero + .agenda-section,
+.news-article-hero + .article-pattern-wrap + .news-article-body {
+    background:
+        radial-gradient(circle at top right, rgba(255, 255, 255, 0.18), transparent 22%),
+        linear-gradient(
+            180deg,
+            rgba(220, 193, 159, 0.96) 0%,
+            rgba(244, 232, 216, 0.92) 36%,
+            rgba(250, 245, 239, 0.9) 62%,
+            rgba(255, 255, 255, 0.98) 100%
+        );
+}
+
+.hero + .festival-divider {
+    border-top: 1px solid rgba(220, 193, 159, 0.24);
+}
+
+.study-hero + .study-content-shell {
+    background:
+        linear-gradient(180deg, rgba(220, 193, 159, 0.64), rgba(250, 245, 239, 0.8) 40%, rgba(231, 243, 249, 0.76)),
+        url("../files/study-squads/study-squads-plain-bg.png");
+    background-size: cover;
+    background-position: center top;
+    background-repeat: no-repeat;
+}
+
+.news-article-hero + .article-pattern-wrap + .news-article-body {
+    padding-top: 0.5rem;
+}
+
 /* ========== Responsive Design ========== */
 @media (max-width: 768px) {
     .hamburger {
