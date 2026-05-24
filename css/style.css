@@ -2387,18 +2387,39 @@ section {
 
 /* ========== Study Squads Page ========== */
 .study-squads-page {
-    background:
-        linear-gradient(180deg, rgba(248, 252, 255, 0.9), rgba(234, 244, 250, 0.92)),
-        url("../files/study-squads/study-squads-plain-bg.png");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+    background: linear-gradient(180deg, #f8fcff 0%, #eef6fb 100%);
 }
 
 .study-hero {
     position: relative;
     padding-top: calc(88px + var(--spacing-xxl));
     padding-bottom: var(--spacing-xxl);
+}
+
+.study-content-shell {
+    position: relative;
+    background:
+        linear-gradient(180deg, rgba(247, 252, 255, 0.72), rgba(231, 243, 249, 0.82)),
+        url("../files/study-squads/study-squads-plain-bg.png");
+    background-size: cover;
+    background-position: center top;
+    background-repeat: no-repeat;
+    overflow: hidden;
+}
+
+.study-content-shell::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background:
+        radial-gradient(circle at 18% 22%, rgba(27, 159, 224, 0.12), transparent 24%),
+        radial-gradient(circle at 82% 38%, rgba(242, 169, 59, 0.12), transparent 18%);
+    pointer-events: none;
+}
+
+.study-content-shell > * {
+    position: relative;
+    z-index: 1;
 }
 
 .study-hero-card {
@@ -2471,7 +2492,9 @@ section {
 }
 
 .study-section-soft {
-    background: rgba(255, 255, 255, 0.72);
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.28), rgba(255, 255, 255, 0.16));
+    border-block: 1px solid rgba(27, 159, 224, 0.12);
+    backdrop-filter: blur(2px);
 }
 
 .study-card-grid {
@@ -2538,8 +2561,9 @@ section {
     position: relative;
     overflow: hidden;
     border-radius: 28px;
-    background: linear-gradient(rgba(13, 43, 61, 0.9), rgba(13, 43, 61, 0.9));
+    background: linear-gradient(rgba(13, 43, 61, 0.88), rgba(13, 43, 61, 0.92));
     color: #ffffff;
+    box-shadow: 0 20px 48px rgba(8, 24, 39, 0.18);
 }
 
 .cta-mentoring.study-cta .cta-title,
