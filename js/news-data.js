@@ -78,14 +78,14 @@ const NEWS_ITEMS = [
     },
     {
         slug: 'tomada-de-posse-2026',
-        date: '2026-03-27',
+        date: '2026-03-23',
         categoryId: 'institucional',
         category: 'Institucional',
         image: 'images/news/tomada-posse-2026-2.jpeg',
         title: 'Tomada de Posse da Direção 2026',
-        excerpt: 'O NEAIST iniciou um novo ciclo de trabalho com a tomada de posse dos seus órgãos sociais para 2026.',
+        excerpt: 'No dia 23 de Março, o NEAIST celebrou a tomada de posse da nova direção, marcando o início de um novo ciclo de representação, união e compromisso com a comunidade africana no Técnico.',
         cta: 'Ler mais',
-        url: 'noticias.html#tomada-de-posse-2026'
+        url: 'noticia-tomada-posse-2026.html'
     },
     {
         slug: 'game-afternoon',
