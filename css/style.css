@@ -2524,6 +2524,33 @@ section {
     margin-top: var(--spacing-xl);
 }
 
+.cta-mentoring.study-cta {
+    position: relative;
+    overflow: hidden;
+    border-radius: 28px;
+    background:
+        linear-gradient(rgba(13, 43, 61, 0.82), rgba(13, 43, 61, 0.82)),
+        url("../files/study-squads/study-squads-plain-bg.png");
+    background-size: cover;
+    background-position: center;
+    color: #ffffff;
+}
+
+.cta-mentoring.study-cta .cta-title,
+.cta-mentoring.study-cta .cta-description {
+    color: var(--white);
+}
+
+.cta-mentoring.study-cta .btn-primary {
+    background: #21a1de;
+    color: #ffffff;
+}
+
+.cta-mentoring.study-cta .btn-primary:hover {
+    background: #4eb8ec;
+    color: #ffffff;
+}
+
 /* ========== News Article Page ========== */
 .news-article-page {
     position: relative;
