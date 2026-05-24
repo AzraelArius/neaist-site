@@ -28,8 +28,8 @@ const translations = {
         hero_btn_about: "Conhecer-nos",
         hero_btn_contact: "Contactar",
         // Features
-        features_title: "O Que Fazemos",
-        features_subtitle: "Apoiamos a comunidade de estudantes africanos no IST",
+        features_title: "Comunidade africana no Técnico",
+        features_subtitle: "Cultura, representação e apoio à integração para estudantes africanos no Instituto Superior Técnico.",
         hero_slide_1_tag: "Evento em destaque",
         hero_slide_1_title: "Dia de África 2026",
         hero_slide_1_desc: "Cartaz oficial e detalhes da celebração no Técnico Innovation Center.",
@@ -46,8 +46,8 @@ const translations = {
 
         // Recent Highlights
         highlights_kicker: "Atualidade NEAIST",
-        highlights_title: "Últimas Notícias",
-        highlights_subtitle: "Arquivo vivo com eventos, momentos institucionais e oportunidades atuais do núcleo.",
+        highlights_title: "Notícias e iniciativas do NEAIST",
+        highlights_subtitle: "Arquivo vivo com eventos, momentos institucionais, oportunidades atuais e iniciativas da comunidade africana no Técnico.",
         news_preview_button: "Ver Arquivo Completo",
         news_title: "Notícias",
         news_subtitle: "Arquivo de atividades, cerimónias, presença institucional e anúncios do NEAIST.",
@@ -318,8 +318,8 @@ const translations = {
         hero_btn_about: "Learn More",
         hero_btn_contact: "Contact Us",
         // Features
-        features_title: "What We Do",
-        features_subtitle: "Supporting the African student community at IST",
+        features_title: "African student community at Técnico",
+        features_subtitle: "Culture, representation and integration support for African students at Instituto Superior Técnico.",
         hero_slide_1_tag: "Featured event",
         hero_slide_1_title: "Africa Day 2026",
         hero_slide_1_desc: "Official poster and event details for the celebration at Tecnico Innovation Center.",
@@ -336,8 +336,8 @@ const translations = {
 
         // Recent Highlights
         highlights_kicker: "NEAIST Updates",
-        highlights_title: "Latest News",
-        highlights_subtitle: "A living archive of events, institutional moments, and current opportunities within the association.",
+        highlights_title: "NEAIST news and initiatives",
+        highlights_subtitle: "A living archive of events, institutional moments, current opportunities and initiatives for African students at Técnico.",
         news_preview_button: "View Full Archive",
         news_title: "News",
         news_subtitle: "Archive of activities, ceremonies, institutional visibility, and announcements from NEAIST.",

@@ -23,7 +23,7 @@ const NEWS_ITEMS = [
         date: '2026-05-23',
         categoryId: 'eventos',
         category: 'Eventos',
-        image: 'images/news/dia-de-africa-poster.jpeg',
+        image: 'images/news/dia-de-africa-no-tecnico-2026.jpeg',
         title: 'Dia de África no Técnico',
         excerpt: 'Uma celebração da cultura, identidade e comunidade africana no Técnico Innovation Center.',
         cta: 'Ler mais',
@@ -81,7 +81,7 @@ const NEWS_ITEMS = [
         date: '2026-03-23',
         categoryId: 'institucional',
         category: 'Institucional',
-        image: 'images/news/tomada-posse-2026-2.jpeg',
+        image: 'images/news/tomada-posse-direcao-neaist-2026.jpeg',
         title: 'Tomada de Posse da Direção 2026',
         excerpt: 'No dia 23 de Março, o NEAIST celebrou a tomada de posse da nova direção, marcando o início de um novo ciclo de representação, união e compromisso com a comunidade africana no Técnico.',
         cta: 'Ler mais',
@@ -129,7 +129,7 @@ function renderNewsMedia(item) {
     if (item.image) {
         return `
             <div class="highlight-media ${item.mediaFit === 'contain' ? 'highlight-media-contain' : ''}">
-                <img src="${item.image}" alt="${item.alt || item.title}">
+                <img src="${item.image}" alt="${item.alt || item.title}" loading="lazy" decoding="async">
             </div>
         `;
     }
