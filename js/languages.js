@@ -1153,6 +1153,9 @@ const pageCopy = {
             ],
             heroButton: "Candidatar-me a Tutor",
             heroNote: "As inscrições para estudantes interessados em participar nos grupos serão abertas numa fase seguinte, após a seleção dos tutores e definição das disciplinas disponíveis.",
+            documentTitle: "Projeto Study Squads NEAIST",
+            documentText: "Consulta o documento base do projeto para conhecer melhor o enquadramento, os objetivos e a estrutura pensada para esta iniciativa académica.",
+            documentButton: "Abrir PDF do Projeto",
             sectionKickers: [
                 "Projeto académico",
                 "Tutoria",
@@ -1217,6 +1220,9 @@ const pageCopy = {
             ],
             heroButton: "Apply as a Tutor",
             heroNote: "Registration for students interested in joining the groups will open later, after tutors are selected and the available courses are defined.",
+            documentTitle: "NEAIST Study Squads Project",
+            documentText: "Read the project document to better understand the framework, objectives, and structure designed for this academic initiative.",
+            documentButton: "Open Project PDF",
             sectionKickers: [
                 "Academic project",
                 "Tutoring",
@@ -1679,6 +1685,9 @@ function applyPageSpecificTranslations() {
         applyText(".study-hero-actions .btn", copy.heroButton);
         applyText(".study-note", copy.heroNote);
         applyAttr(".study-hero-visual img", "alt", copy.posterAlt);
+        applyText(".study-document-card h3", copy.documentTitle);
+        applyText(".study-document-card p", copy.documentText);
+        applyText(".study-document-card .btn", copy.documentButton);
         applyTextList(".study-section .section-kicker", copy.sectionKickers);
         applyTextList(".study-section .section-title", copy.sectionTitles);
         applyTextList(".study-section .section-subtitle", copy.sectionSubtitles);
