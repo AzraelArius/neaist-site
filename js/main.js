@@ -6,6 +6,7 @@
 // ========== DOM Content Loaded ==========
 document.addEventListener('DOMContentLoaded', function() {
     initMobileMenu();
+    initNavDropdowns();
     initScrollEffects();
     initHeroCarousel();
     initBackToTop();
@@ -20,7 +21,34 @@ document.addEventListener('DOMContentLoaded', function() {
 function initMobileMenu() {
     const hamburger = document.getElementById('hamburger');
     const navMenu = document.getElementById('navMenu');
-    const navLinks = document.querySelectorAll('.nav-link');
+    const navLinks = document.querySelectorAll('.nav-link, .nav-dropdown-link');
+
+    function resetHamburger() {
+        if (!hamburger) {
+            return;
+        }
+
+        const spans = hamburger.querySelectorAll('span');
+        hamburger.classList.remove('active');
+        spans[0].style.transform = 'none';
+        spans[1].style.opacity = '1';
+        spans[2].style.transform = 'none';
+    }
+
+    function closeMobileMenu() {
+        if (!navMenu) {
+            return;
+        }
+
+        navMenu.classList.remove('active');
+        document.querySelectorAll('.nav-item-dropdown.open').forEach((item) => {
+            item.classList.remove('open');
+        });
+        document.querySelectorAll('[data-nav-dropdown]').forEach((button) => {
+            button.setAttribute('aria-expanded', 'false');
+        });
+        resetHamburger();
+    }
     
     if (hamburger && navMenu) {
         hamburger.addEventListener('click', () => {
@@ -43,29 +71,115 @@ function initMobileMenu() {
         // Close menu when clicking on a link
         navLinks.forEach(link => {
             link.addEventListener('click', () => {
-                navMenu.classList.remove('active');
-                hamburger.classList.remove('active');
-                
-                const spans = hamburger.querySelectorAll('span');
-                spans[0].style.transform = 'none';
-                spans[1].style.opacity = '1';
-                spans[2].style.transform = 'none';
+                if (link.hasAttribute('data-nav-dropdown')) {
+                    return;
+                }
+
+                closeMobileMenu();
             });
         });
         
         // Close menu when clicking outside
         document.addEventListener('click', (e) => {
             if (!hamburger.contains(e.target) && !navMenu.contains(e.target)) {
-                navMenu.classList.remove('active');
-                hamburger.classList.remove('active');
-                
-                const spans = hamburger.querySelectorAll('span');
-                spans[0].style.transform = 'none';
-                spans[1].style.opacity = '1';
-                spans[2].style.transform = 'none';
+                closeMobileMenu();
             }
         });
     }
+}
+
+// ========== Navigation Dropdowns ==========
+function initNavDropdowns() {
+    const dropdowns = document.querySelectorAll('.nav-item-dropdown');
+
+    if (!dropdowns.length) {
+        return;
+    }
+
+    function closeDropdown(dropdown) {
+        const button = dropdown.querySelector('[data-nav-dropdown]');
+        dropdown.classList.remove('open');
+
+        if (button) {
+            button.setAttribute('aria-expanded', 'false');
+        }
+    }
+
+    function openDropdown(dropdown) {
+        const button = dropdown.querySelector('[data-nav-dropdown]');
+
+        dropdowns.forEach((item) => {
+            if (item !== dropdown) {
+                closeDropdown(item);
+            }
+        });
+
+        dropdown.classList.add('open');
+
+        if (button) {
+            button.setAttribute('aria-expanded', 'true');
+        }
+    }
+
+    dropdowns.forEach((dropdown) => {
+        const button = dropdown.querySelector('[data-nav-dropdown]');
+        const links = Array.from(dropdown.querySelectorAll('.nav-dropdown-link'));
+
+        if (!button) {
+            return;
+        }
+
+        button.addEventListener('click', (event) => {
+            event.preventDefault();
+            const isOpen = dropdown.classList.contains('open');
+
+            if (isOpen) {
+                closeDropdown(dropdown);
+            } else {
+                openDropdown(dropdown);
+            }
+        });
+
+        button.addEventListener('keydown', (event) => {
+            if (event.key === 'ArrowDown') {
+                event.preventDefault();
+                openDropdown(dropdown);
+                links[0]?.focus();
+            }
+
+            if (event.key === 'Escape') {
+                closeDropdown(dropdown);
+                button.focus();
+            }
+        });
+
+        links.forEach((link, index) => {
+            link.addEventListener('keydown', (event) => {
+                if (event.key === 'Escape') {
+                    closeDropdown(dropdown);
+                    button.focus();
+                }
+
+                if (event.key === 'ArrowDown') {
+                    event.preventDefault();
+                    links[(index + 1) % links.length]?.focus();
+                }
+
+                if (event.key === 'ArrowUp') {
+                    event.preventDefault();
+                    links[(index - 1 + links.length) % links.length]?.focus();
+                }
+            });
+        });
+    });
+
+    document.addEventListener('click', (event) => {
+        dropdowns.forEach((dropdown) => {
+            if (!dropdown.contains(event.target)) {
+                closeDropdown(dropdown);
+            }
+        });
+    });
 }
 
 // ========== Scroll Effects ==========

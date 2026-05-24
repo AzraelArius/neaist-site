@@ -8,25 +8,42 @@ import os
 
 # Define pages and their navigation updates
 pages = {
+    'equipa.html': 'Equipa',
+    'noticias.html': 'Notícias',
+    'galeria.html': 'Galeria',
     'sobre-nos.html': 'Sobre Nós',
     'contactos.html': 'Contactos',
     'recursos.html': 'Recursos',
     'guia-caloiro.html': 'Guia do Caloiro',
-    'mentoria.html': 'Programa Mentorado'
+    'mentoria.html': 'Programa Mentorado',
+    'study-squads.html': 'Study Squads'
 }
 
 # Navigation menu template with language switcher
 nav_template = '''                    <ul class="nav-list">
                         <li class="nav-item"><a href="index.html" class="nav-link{home_active}" data-i18n="nav_home">Início</a></li>
                         <li class="nav-item"><a href="sobre-nos.html" class="nav-link{about_active}" data-i18n="nav_about">Sobre Nós</a></li>
-                        <li class="nav-item"><a href="recursos.html" class="nav-link{resources_active}" data-i18n="nav_resources">Recursos</a></li>
-                        <li class="nav-item"><a href="guia-caloiro.html" class="nav-link{guide_active}" data-i18n="nav_guide">Guia do Caloiro</a></li>
-                        <li class="nav-item"><a href="mentoria.html" class="nav-link{mentoring_active}" data-i18n="nav_mentoring">Programa Mentorado</a></li>
+                        <li class="nav-item"><a href="equipa.html" class="nav-link{team_active}" data-i18n="nav_team">Equipa</a></li>
+                        <li class="nav-item nav-item-dropdown">
+                            <button type="button" class="nav-link nav-dropdown-toggle{academic_active}" data-nav-dropdown aria-expanded="false" aria-haspopup="true">
+                                <span data-i18n="nav_academic">Académico</span>
+                                <i class="fas fa-chevron-down" aria-hidden="true"></i>
+                            </button>
+                            <ul class="nav-dropdown-menu">
+                                <li><a href="study-squads.html" class="nav-dropdown-link{study_active}" data-i18n="nav_study_squads">Study Squads</a></li>
+                                <li><a href="mentoria.html" class="nav-dropdown-link{mentoring_active}" data-i18n="nav_mentoring">Programa Mentorado</a></li>
+                                <li><a href="guia-caloiro.html" class="nav-dropdown-link{guide_active}" data-i18n="nav_guide">Guia do Caloiro</a></li>
+                                <li><a href="recursos.html" class="nav-dropdown-link{resources_active}" data-i18n="nav_resources">Recursos</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item"><a href="noticias.html" class="nav-link{news_active}" data-i18n="nav_news">Notícias</a></li>
+                        <li class="nav-item"><a href="galeria.html" class="nav-link{gallery_active}" data-i18n="nav_gallery">Galeria</a></li>
                         <li class="nav-item"><a href="contactos.html" class="nav-link{contact_active}" data-i18n="nav_contact">Contactos</a></li>
+                        <li class="nav-item"><a href="https://docs.google.com/forms/d/e/1FAIpQLSeaPowt7ku00SvK6ykEAOBPSun59V1UjDE_cMkKSTwUMCJJ-Q/viewform?usp=header" class="nav-link nav-link-cta" target="_blank" rel="noopener" data-i18n="nav_recruitment">Recrutamento</a></li>
                         <li class="nav-item language-switcher">
                             <button class="lang-btn active" data-lang="pt" aria-label="Português">PT</button>
                             <span class="lang-separator">|</span>
-                            <button class="lang-btn" data-lang="en" aria-label="English">EN</button>
+                            <button class="lang-btn lang-btn-disabled" data-lang="en" aria-label="English" disabled aria-disabled="true">EN</button>
                         </li>
                     </ul>'''
 
@@ -37,6 +54,11 @@ def update_navigation(filename, content):
     active_flags = {
         'home_active': '',
         'about_active': '',
+        'team_active': '',
+        'academic_active': '',
+        'study_active': '',
+        'news_active': '',
+        'gallery_active': '',
         'resources_active': '',
         'guide_active': '',
         'mentoring_active': '',
@@ -47,12 +69,24 @@ def update_navigation(filename, content):
         active_flags['home_active'] = ' active'
     elif 'sobre-nos.html' in filename:
         active_flags['about_active'] = ' active'
+    elif 'equipa.html' in filename:
+        active_flags['team_active'] = ' active'
+    elif 'noticias.html' in filename:
+        active_flags['news_active'] = ' active'
+    elif 'galeria.html' in filename:
+        active_flags['gallery_active'] = ' active'
     elif 'recursos.html' in filename:
+        active_flags['academic_active'] = ' active'
         active_flags['resources_active'] = ' active'
     elif 'guia-caloiro.html' in filename:
+        active_flags['academic_active'] = ' active'
         active_flags['guide_active'] = ' active'
     elif 'mentoria.html' in filename:
+        active_flags['academic_active'] = ' active'
         active_flags['mentoring_active'] = ' active'
+    elif 'study-squads.html' in filename:
+        active_flags['academic_active'] = ' active'
+        active_flags['study_active'] = ' active'
     elif 'contactos.html' in filename:
         active_flags['contact_active'] = ' active'
     
