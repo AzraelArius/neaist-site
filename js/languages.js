@@ -248,7 +248,14 @@ const translations = {
         guide_subtitle: "Bem-vindo ao IST! Estamos aqui para te ajudar a começar",
         guide_welcome_title: "Bem-vindo ao Instituto Superior Técnico!",
         guide_welcome_p1: "Parabéns por teres ingressado no IST! Este é o início de uma jornada incrível de aprendizagem, crescimento e novas experiências. Este guia foi criado para te ajudar a navegar pelos primeiros passos desta nova etapa da tua vida.",
-        
+        guide_docs_kicker: "Guias PDF",
+        guide_docs_title: "Documentos de apoio para novos estudantes",
+        guide_docs_subtitle: "Acede diretamente aos dois guias preparados para te acompanhar nos primeiros passos no Técnico.",
+        guide_doc1_title: "Guia 1 - Primeiros Passos",
+        guide_doc1_desc: "Introdução essencial para novos alunos, com orientações iniciais sobre adaptação, organização e vida académica.",
+        guide_doc2_title: "Guia 2 - Próximos Passos",
+        guide_doc2_desc: "Guia complementar com informação prática para os primeiros tempos no IST e integração no campus.",
+
         guide_steps_title: "Primeiros Passos",
         guide_step1_title: "Antes de Chegares",
         guide_step2_title: "Primeira Semana",
@@ -533,7 +540,14 @@ const translations = {
         guide_subtitle: "Welcome to IST! We're here to help you get started",
         guide_welcome_title: "Welcome to Instituto Superior Técnico!",
         guide_welcome_p1: "Congratulations on joining IST! This is the beginning of an incredible journey of learning, growth and new experiences. This guide was created to help you navigate the first steps of this new chapter in your life.",
-        
+        guide_docs_kicker: "PDF Guides",
+        guide_docs_title: "Support documents for new students",
+        guide_docs_subtitle: "Access the two guides prepared to accompany you through your first steps at Técnico.",
+        guide_doc1_title: "Guide 1 - First Steps",
+        guide_doc1_desc: "Essential introduction for new students, with initial guidance on adaptation, organization, and academic life.",
+        guide_doc2_title: "Guide 2 - Next Steps",
+        guide_doc2_desc: "Complementary guide with practical information for your first period at IST and integration on campus.",
+
         guide_steps_title: "First Steps",
         guide_step1_title: "Before Arriving",
         guide_step2_title: "First Week",
