@@ -8,106 +8,198 @@ const NEWS_ITEMS = [
         slug: 'study-squads-tutores-2026',
         date: '2026-05-24',
         categoryId: 'oportunidades',
-        category: 'Oportunidades',
-        secondaryTag: 'Académico',
         image: 'files/study-squads/study-squads-poster.png',
-        alt: 'Study Squads NEAIST — grupos de estudo com apoio de tutores',
-        title: 'Candidaturas abertas para Tutores — Study Squads',
-        excerpt: 'O NEAIST está a recrutar tutores para os Study Squads, uma iniciativa de grupos de estudo criada para promover a aprendizagem colaborativa, o apoio entre colegas e hábitos de estudo mais consistentes ao longo do semestre.',
-        cta: 'Candidatar-me a Tutor',
         url: 'https://docs.google.com/forms/d/e/1FAIpQLSeh4LVB7fIxfBD5aBc_p2V5zvk1f-D_hd54MXaNZPrn2RKCSA/viewform?usp=header',
-        external: true
+        external: true,
+        copy: {
+            pt: {
+                category: 'Oportunidades',
+                secondaryTag: 'Académico',
+                alt: 'Study Squads NEAIST — grupos de estudo com apoio de tutores',
+                title: 'Candidaturas abertas para Tutores — Study Squads',
+                excerpt: 'O NEAIST está a recrutar tutores para os Study Squads, uma iniciativa de grupos de estudo criada para promover a aprendizagem colaborativa, o apoio entre colegas e hábitos de estudo mais consistentes ao longo do semestre.',
+                cta: 'Candidatar-me a Tutor'
+            },
+            en: {
+                category: 'Opportunities',
+                secondaryTag: 'Academic',
+                alt: 'Study Squads NEAIST — study groups supported by tutors',
+                title: 'Tutor Applications Open — Study Squads',
+                excerpt: 'NEAIST is recruiting tutors for Study Squads, a study-group initiative created to promote collaborative learning, peer support, and more consistent study habits throughout the semester.',
+                cta: 'Apply as a Tutor'
+            }
+        }
     },
     {
         slug: 'dia-de-africa-2026',
         date: '2026-05-23',
         categoryId: 'eventos',
-        category: 'Eventos',
         image: 'images/news/dia-de-africa-no-tecnico-2026.jpeg',
-        title: 'Dia de África no Técnico',
-        excerpt: 'Uma celebração da cultura, identidade e comunidade africana no Técnico Innovation Center.',
-        cta: 'Ler mais',
-        url: 'dia-de-africa.html'
+        url: 'dia-de-africa.html',
+        copy: {
+            pt: {
+                category: 'Eventos',
+                title: 'Dia de África no Técnico',
+                excerpt: 'Uma celebração da cultura, identidade e comunidade africana no Técnico Innovation Center.',
+                cta: 'Ler mais'
+            },
+            en: {
+                category: 'Events',
+                title: 'Africa Day at Técnico',
+                excerpt: 'A celebration of culture, identity, and African community at Técnico Innovation Center.',
+                cta: 'Read more'
+            }
+        }
     },
     {
         slug: 'recrutamento-colaboradores-2026',
         date: '2026-05-22',
         categoryId: 'oportunidades',
-        category: 'Oportunidades',
         image: 'images/news/collaboradores-2026.png',
         mediaFit: 'contain',
-        title: 'Recrutamento de Colaboradores 2026',
-        excerpt: 'Estão abertas as inscrições para estudantes que queiram colaborar com o NEAIST.',
-        cta: 'Ler mais',
         url: 'https://docs.google.com/forms/d/e/1FAIpQLSeaPowt7ku00SvK6ykEAOBPSun59V1UjDE_cMkKSTwUMCJJ-Q/viewform?usp=header',
-        external: true
+        external: true,
+        copy: {
+            pt: {
+                category: 'Oportunidades',
+                title: 'Recrutamento de Colaboradores 2026',
+                excerpt: 'Estão abertas as inscrições para estudantes que queiram colaborar com o NEAIST.',
+                cta: 'Ler mais'
+            },
+            en: {
+                category: 'Opportunities',
+                title: 'Collaborator Recruitment 2026',
+                excerpt: 'Applications are open for students who want to collaborate with NEAIST.',
+                cta: 'Read more'
+            }
+        }
     },
     {
         slug: 'faist-2026',
         date: '2026-05-16',
         categoryId: 'institucional',
-        category: 'Institucional',
         placeholderLabel: 'FAIST',
-        title: 'Participação no FAIST',
-        excerpt: 'O NEAIST participou no Fórum Associativo do IST, reforçando a sua presença no associativismo estudantil.',
-        cta: 'Ler mais',
-        url: 'noticias.html#faist-2026'
+        url: 'noticias.html#faist-2026',
+        copy: {
+            pt: {
+                category: 'Institucional',
+                title: 'Participação no FAIST',
+                excerpt: 'O NEAIST participou no Fórum Associativo do IST, reforçando a sua presença no associativismo estudantil.',
+                cta: 'Ler mais'
+            },
+            en: {
+                category: 'Institutional',
+                title: 'Participation in FAIST',
+                excerpt: 'NEAIST took part in the IST Associative Forum, reinforcing its presence in student association life.',
+                cta: 'Read more'
+            }
+        }
     },
     {
         slug: 'semana-de-africa-ulisboa',
         date: '2026-05-09',
         categoryId: 'eventos',
-        category: 'Eventos',
         image: 'images/news/semana-de-africa-ulisboa.jpg',
-        title: 'Semana de África / ULisboa',
-        excerpt: 'Participação e colaboração em iniciativas ligadas à Semana de África na Universidade de Lisboa.',
-        cta: 'Ler mais',
         url: 'https://www.ulisboa.pt/evento/sem-margem-semana-de-africa-da-ulisboa',
-        external: true
+        external: true,
+        copy: {
+            pt: {
+                category: 'Eventos',
+                title: 'Semana de África / ULisboa',
+                excerpt: 'Participação e colaboração em iniciativas ligadas à Semana de África na Universidade de Lisboa.',
+                cta: 'Ler mais'
+            },
+            en: {
+                category: 'Events',
+                title: 'Africa Week / ULisboa',
+                excerpt: 'Participation and collaboration in initiatives linked to Africa Week at the University of Lisbon.',
+                cta: 'Read more'
+            }
+        }
     },
     {
         slug: 'rtp-africa-30-anos',
         date: '2026-04-12',
         categoryId: 'arquivo',
-        category: 'Arquivo',
         image: 'images/news/rtp-30-years.jpeg',
-        title: 'RTP África 30 Anos na Gulbenkian',
-        excerpt: 'Participação do NEAIST num momento de visibilidade pública e representação estudantil ligado aos 30 anos da RTP África.',
-        cta: 'Ler mais',
-        url: 'noticias.html#rtp-africa-30-anos'
+        url: 'noticias.html#rtp-africa-30-anos',
+        copy: {
+            pt: {
+                category: 'Arquivo',
+                title: 'RTP África 30 Anos na Gulbenkian',
+                excerpt: 'Participação do NEAIST num momento de visibilidade pública e representação estudantil ligado aos 30 anos da RTP África.',
+                cta: 'Ler mais'
+            },
+            en: {
+                category: 'Archive',
+                title: 'RTP África 30 Years at Gulbenkian',
+                excerpt: 'NEAIST took part in a moment of public visibility and student representation linked to RTP África’s 30th anniversary.',
+                cta: 'Read more'
+            }
+        }
     },
     {
         slug: 'tomada-de-posse-2026',
         date: '2026-03-23',
         categoryId: 'institucional',
-        category: 'Institucional',
         image: 'images/news/tomada-posse-direcao-neaist-2026.jpeg',
-        title: 'Tomada de Posse da Direção 2026',
-        excerpt: 'No dia 23 de Março, o NEAIST celebrou a tomada de posse da nova direção, marcando o início de um novo ciclo de representação, união e compromisso com a comunidade africana no Técnico.',
-        cta: 'Ler mais',
-        url: 'noticia-tomada-posse-2026.html'
+        url: 'noticia-tomada-posse-2026.html',
+        copy: {
+            pt: {
+                category: 'Institucional',
+                title: 'Tomada de Posse da Direção 2026',
+                excerpt: 'No dia 23 de Março, o NEAIST celebrou a tomada de posse da nova direção, marcando o início de um novo ciclo de representação, união e compromisso com a comunidade africana no Técnico.',
+                cta: 'Ler mais'
+            },
+            en: {
+                category: 'Institutional',
+                title: 'Inauguration of the 2026 Board',
+                excerpt: 'On March 23, NEAIST celebrated the inauguration of its new board, marking the beginning of a new cycle of representation, unity, and commitment to the African community at Técnico.',
+                cta: 'Read more'
+            }
+        }
     },
     {
         slug: 'game-afternoon',
         date: '2026-02-18',
         categoryId: 'eventos',
-        category: 'Eventos',
         placeholderLabel: 'Game Afternoon',
-        title: 'Game Afternoon',
-        excerpt: 'Um momento informal de convívio, integração e comunidade entre estudantes.',
-        cta: 'Ler mais',
-        url: 'noticias.html#game-afternoon'
+        url: 'noticias.html#game-afternoon',
+        copy: {
+            pt: {
+                category: 'Eventos',
+                title: 'Game Afternoon',
+                excerpt: 'Um momento informal de convívio, integração e comunidade entre estudantes.',
+                cta: 'Ler mais'
+            },
+            en: {
+                category: 'Events',
+                title: 'Game Afternoon',
+                excerpt: 'An informal moment of community, integration, and student connection.',
+                cta: 'Read more'
+            }
+        }
     },
     {
         slug: 'tomada-de-posse-2024-2025',
         date: '2025-02-17',
         categoryId: 'arquivo',
-        category: 'Arquivo',
         image: 'images/news/tomada-posse-2024-2025.jpeg',
-        title: 'Tomada de Posse - Mandato 2024/2025',
-        excerpt: 'Cerimónia que marcou o início do mandato de 2024/2025, com tomada de posse dos órgãos sociais e presença da comunidade académica.',
-        cta: 'Ler mais',
-        url: 'galeria.html#tomada-posse-2024-2025'
+        url: 'galeria.html#tomada-posse-2024-2025',
+        copy: {
+            pt: {
+                category: 'Arquivo',
+                title: 'Tomada de Posse - Mandato 2024/2025',
+                excerpt: 'Cerimónia que marcou o início do mandato de 2024/2025, com tomada de posse dos órgãos sociais e presença da comunidade académica.',
+                cta: 'Ler mais'
+            },
+            en: {
+                category: 'Archive',
+                title: 'Inauguration Ceremony - 2024/2025 Term',
+                excerpt: 'Ceremony that marked the beginning of the 2024/2025 term, with the inauguration of the association’s governing bodies and the presence of the academic community.',
+                cta: 'Read more'
+            }
+        }
     }
 ];
 
@@ -117,8 +209,15 @@ function sortNewsItems() {
     return [...NEWS_ITEMS].sort((a, b) => b.date.localeCompare(a.date));
 }
 
+function getLocalizedNewsValue(item, field) {
+    const language = window.currentLanguage === 'en' ? 'en' : 'pt';
+    return item.copy?.[language]?.[field] ?? item.copy?.pt?.[field] ?? item[field];
+}
+
 function formatNewsDate(dateString) {
-    return new Intl.DateTimeFormat('pt-PT', {
+    const locale = window.currentLanguage === 'en' ? 'en-GB' : 'pt-PT';
+
+    return new Intl.DateTimeFormat(locale, {
         day: '2-digit',
         month: 'long',
         year: 'numeric'
@@ -129,16 +228,16 @@ function renderNewsMedia(item) {
     if (item.image) {
         return `
             <div class="highlight-media ${item.mediaFit === 'contain' ? 'highlight-media-contain' : ''}">
-                <img src="${item.image}" alt="${item.alt || item.title}" loading="lazy" decoding="async">
+                <img src="${item.image}" alt="${getLocalizedNewsValue(item, 'alt') || getLocalizedNewsValue(item, 'title')}" loading="lazy" decoding="async">
             </div>
         `;
     }
 
     return `
         <div class="highlight-media highlight-media-placeholder">
-            <span class="placeholder-pill">${item.category}</span>
+            <span class="placeholder-pill">${getLocalizedNewsValue(item, 'category')}</span>
             <strong>${item.placeholderLabel || 'NEAIST'}</strong>
-            <p>${item.title}</p>
+            <p>${getLocalizedNewsValue(item, 'title')}</p>
         </div>
     `;
 }
@@ -146,9 +245,14 @@ function renderNewsMedia(item) {
 function renderNewsCard(item, showButton = true) {
     const href = item.url || `noticias.html#${item.slug}`;
     const target = item.external ? ' target="_blank" rel="noopener"' : '';
-    const tagMarkup = item.secondaryTag
-        ? `<div class="highlight-tag-group"><span class="highlight-tag">${item.category}</span><span class="highlight-tag highlight-tag-secondary">${item.secondaryTag}</span></div>`
-        : `<span class="highlight-tag">${item.category}</span>`;
+    const secondaryTag = getLocalizedNewsValue(item, 'secondaryTag');
+    const category = getLocalizedNewsValue(item, 'category');
+    const title = getLocalizedNewsValue(item, 'title');
+    const excerpt = getLocalizedNewsValue(item, 'excerpt');
+    const cta = getLocalizedNewsValue(item, 'cta');
+    const tagMarkup = secondaryTag
+        ? `<div class="highlight-tag-group"><span class="highlight-tag">${category}</span><span class="highlight-tag highlight-tag-secondary">${secondaryTag}</span></div>`
+        : `<span class="highlight-tag">${category}</span>`;
 
     return `
         <article class="highlight-card ${showButton ? '' : 'highlight-card-compact'} fade-in-up" id="${item.slug}" data-category="${item.categoryId}">
@@ -156,9 +260,9 @@ function renderNewsCard(item, showButton = true) {
             <div class="highlight-body">
                 ${tagMarkup}
                 <p class="news-date">${formatNewsDate(item.date)}</p>
-                <h3 class="highlight-title">${item.title}</h3>
-                <p class="highlight-description">${item.excerpt}</p>
-                ${showButton ? `<a class="news-card-link" href="${href}"${target}>${item.cta || 'Ler mais'}</a>` : ''}
+                <h3 class="highlight-title">${title}</h3>
+                <p class="highlight-description">${excerpt}</p>
+                ${showButton ? `<a class="news-card-link" href="${href}"${target}>${cta || (window.currentLanguage === 'en' ? 'Read more' : 'Ler mais')}</a>` : ''}
             </div>
         </article>
     `;

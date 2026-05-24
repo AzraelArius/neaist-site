@@ -97,13 +97,14 @@ const GALLERY_IMAGES = [
 function renderGallery() {
     const galleryGrid = document.getElementById("galleryGrid");
     const galleryCount = document.getElementById("galleryCount");
+    const isEnglish = window.currentLanguage === "en";
 
     if (!galleryGrid) {
         return;
     }
 
     if (galleryCount) {
-        galleryCount.textContent = `${GALLERY_IMAGES.length} imagens`;
+        galleryCount.textContent = `${GALLERY_IMAGES.length} ${isEnglish ? "images" : "imagens"}`;
     }
 
     galleryGrid.innerHTML = GALLERY_IMAGES.map((imagePath, index) => {
@@ -111,11 +112,12 @@ function renderGallery() {
         const altText = fileName.replace(/[-_]/g, " ");
 
         return `
-            <a class="gallery-item fade-in-up" href="${imagePath}" target="_blank" rel="noopener" aria-label="Abrir imagem ${index + 1}">
+            <a class="gallery-item fade-in-up" href="${imagePath}" target="_blank" rel="noopener" aria-label="${isEnglish ? "Open image" : "Abrir imagem"} ${index + 1}">
                 <img src="${imagePath}" alt="${altText}" loading="lazy">
             </a>
         `;
     }).join("");
 }
 
+window.renderGallery = renderGallery;
 document.addEventListener("DOMContentLoaded", renderGallery);
