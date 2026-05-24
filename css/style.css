@@ -2387,10 +2387,16 @@ section {
 
 /* ========== Study Squads Page ========== */
 .study-squads-page {
-    background: linear-gradient(180deg, rgba(248, 252, 255, 0.96), rgba(234, 244, 250, 0.86));
+    background:
+        linear-gradient(180deg, rgba(248, 252, 255, 0.9), rgba(234, 244, 250, 0.92)),
+        url("../files/study-squads/study-squads-plain-bg.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 .study-hero {
+    position: relative;
     padding-top: calc(88px + var(--spacing-xxl));
     padding-bottom: var(--spacing-xxl);
 }
@@ -2460,8 +2466,12 @@ section {
     padding-top: 0;
 }
 
+.study-section {
+    position: relative;
+}
+
 .study-section-soft {
-    background: rgba(255, 255, 255, 0.58);
+    background: rgba(255, 255, 255, 0.72);
 }
 
 .study-card-grid {
@@ -2528,11 +2538,7 @@ section {
     position: relative;
     overflow: hidden;
     border-radius: 28px;
-    background:
-        linear-gradient(rgba(13, 43, 61, 0.82), rgba(13, 43, 61, 0.82)),
-        url("../files/study-squads/study-squads-plain-bg.png");
-    background-size: cover;
-    background-position: center;
+    background: linear-gradient(rgba(13, 43, 61, 0.9), rgba(13, 43, 61, 0.9));
     color: #ffffff;
 }
 
