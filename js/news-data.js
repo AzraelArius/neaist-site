@@ -5,6 +5,20 @@
 
 const NEWS_ITEMS = [
     {
+        slug: 'study-squads-tutores-2026',
+        date: '2026-05-24',
+        categoryId: 'oportunidades',
+        category: 'Oportunidades',
+        secondaryTag: 'Académico',
+        image: 'files/study-squads/nea-study-squads.png',
+        alt: 'Study Squads NEAIST',
+        title: 'Candidaturas abertas para Tutores — Study Squads',
+        excerpt: 'O NEAIST está a recrutar tutores para os Study Squads, uma iniciativa de grupos de estudo criada para promover a aprendizagem colaborativa, o apoio entre colegas e hábitos de estudo mais consistentes ao longo do semestre.',
+        cta: 'Candidatar-me a Tutor',
+        url: 'https://docs.google.com/forms/d/e/1FAIpQLSeh4LVB7fIxfBD5aBc_p2V5zvk1f-D_hd54MXaNZPrn2RKCSA/viewform?usp=header',
+        external: true
+    },
+    {
         slug: 'dia-de-africa-2026',
         date: '2026-05-23',
         categoryId: 'eventos',
@@ -115,7 +129,7 @@ function renderNewsMedia(item) {
     if (item.image) {
         return `
             <div class="highlight-media ${item.mediaFit === 'contain' ? 'highlight-media-contain' : ''}">
-                <img src="${item.image}" alt="${item.title}">
+                <img src="${item.image}" alt="${item.alt || item.title}">
             </div>
         `;
     }
@@ -132,12 +146,15 @@ function renderNewsMedia(item) {
 function renderNewsCard(item, showButton = true) {
     const href = item.url || `noticias.html#${item.slug}`;
     const target = item.external ? ' target="_blank" rel="noopener"' : '';
+    const tagMarkup = item.secondaryTag
+        ? `<div class="highlight-tag-group"><span class="highlight-tag">${item.category}</span><span class="highlight-tag highlight-tag-secondary">${item.secondaryTag}</span></div>`
+        : `<span class="highlight-tag">${item.category}</span>`;
 
     return `
         <article class="highlight-card ${showButton ? '' : 'highlight-card-compact'} fade-in-up" id="${item.slug}" data-category="${item.categoryId}">
             ${renderNewsMedia(item)}
             <div class="highlight-body">
-                <span class="highlight-tag">${item.category}</span>
+                ${tagMarkup}
                 <p class="news-date">${formatNewsDate(item.date)}</p>
                 <h3 class="highlight-title">${item.title}</h3>
                 <p class="highlight-description">${item.excerpt}</p>
