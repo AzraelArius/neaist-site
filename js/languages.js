@@ -1501,58 +1501,76 @@ const pageCopy = {
         pt: {
             title: "Game Day NEAIST | 23 de Abril de 2026",
             description: "Notícia do NEAIST sobre o Game Day de 23 de Abril de 2026, uma tarde de jogos, convívio e comunidade entre estudantes no Técnico.",
-            heroMeta: "Eventos · 23 de Abril de 2026",
+            heroMeta: "23 de Abril de 2026",
             heroTitle: "Game Day NEAIST",
             heroIntro: "No dia 23 de Abril de 2026, o NEAIST viveu um Game Day bonito, leve e cheio de energia positiva, marcado por jogos, risadas e um convívio que tornou a tarde verdadeiramente enriquecedora.",
-            heroButtons: ["Voltar às notícias", "Instagram do NEAIST"],
-            articleTitles: [
+            heroButtons: ["Voltar às notícias", "Ver momentos", "Instagram do NEAIST"],
+            previewBadge: "Quiz . Games . Fun",
+            gratitudeTitle: "Obrigado por terem vindo 💫",
+            gratitudeText: "Muito obrigada a todos por terem vindo ao nosso primeiro evento. Significou imenso para nós e deu-nos ainda mais motivação para continuar a criar momentos especiais como este. 🥹💫<br><br>Para quem não conseguiu estar presente, não se preocupem — fiquem atentos, porque vêm aí muitas novidades e próximos eventos. 💕✨",
+            recapTitle: "Como foi a tarde",
+            recapSubtitle: "Um encontro simples, mas cheio de energia, partilha e comunidade.",
+            recapTitles: [
                 "Uma tarde feita de convívio",
                 "Jogos, alegria e partilha",
-                "Obrigado a todos os estudantes"
+                "O primeiro de muitos"
             ],
-            articleParagraphs: [
+            recapTexts: [
                 "No dia 23 de Abril de 2026, reunimo-nos para um Game Day especial no C9, pensado como um momento simples mas marcante de encontro entre estudantes.",
                 "Entre jogos, quiz, conversas e muitos sorrisos, a tarde ganhou vida com a presença de estudantes que trouxeram entusiasmo, abertura e vontade de estar juntos num ambiente leve e acolhedor.",
-                "Mais do que uma atividade informal, este encontro mostrou mais uma vez o valor de criar espaços de pausa, proximidade e comunidade dentro da vida académica.",
-                "Foi uma experiência bonita e verdadeiramente enriquecedora para todos os que conseguiram aparecer, participar e contribuir para o ambiente que se viveu ao longo do evento.",
-                "Deixamos um agradecimento sincero a todos os estudantes que marcaram presença e ajudaram a fazer deste Game Day um momento especial para o NEAIST."
+                "Este encontro mostrou mais uma vez o valor de criar espaços de pausa, proximidade e comunidade dentro da vida académica. Foi uma experiência bonita e enriquecedora para todos os que participaram."
             ],
             mediaEyebrow: "Poster e vídeo",
-            mediaTitle: "Reviver o Game Day",
-            mediaText: "Partilhamos aqui o cartaz oficial do evento e um vídeo curto para guardar um pouco da energia vivida nesta tarde.",
-            mediaCardTitles: ["Poster do evento", "Vídeo do Game Day"],
+            mediaTitle: "Momentos do Game Day",
+            mediaText: "Alguns registos que guardam a energia e o ambiente vivido nesta tarde.",
+            mediaCardTitles: ["O convite para o Game Day", "Um pouco da energia que se viveu"],
             mediaCardTexts: [
-                "O cartaz divulgado antes do encontro, com a data de 23 de Abril, o espaço C9 e o convite para uma tarde de quiz, games e fun.",
-                "Um registo em vídeo para recordar o ambiente, a participação dos estudantes e a boa energia que marcou o encontro."
-            ]
+                "Foi com esta imagem que convidámos a comunidade a juntar-se a nós para uma tarde de quiz, jogos e convívio no C9.",
+                "Um pequeno registo da boa disposição, participação e ambiente leve que marcaram o nosso primeiro evento."
+            ],
+            photoEyebrow: "Mais memórias",
+            photoTitle: "Imagens do encontro",
+            photoText: "Alguns dos momentos que ficaram guardados deste primeiro Game Day do NEAIST.",
+            ctaTitle: "Fica atento aos próximos eventos",
+            ctaText: "O NEAIST continuará a criar momentos de convívio, partilha e comunidade. Acompanha-nos para não perderes as próximas iniciativas.",
+            ctaButton: "Ver mais eventos"
         },
         en: {
             title: "NEAIST Game Day | April 23, 2026",
             description: "NEAIST article about the Game Day held on April 23, 2026, an afternoon of games, connection, and student community at Técnico.",
-            heroMeta: "Events · April 23, 2026",
+            heroMeta: "April 23, 2026",
             heroTitle: "NEAIST Game Day",
             heroIntro: "On April 23, 2026, NEAIST enjoyed a beautiful and lively Game Day filled with games, laughter, and a sense of community that made the afternoon truly enriching.",
-            heroButtons: ["Back to news", "NEAIST Instagram"],
-            articleTitles: [
+            heroButtons: ["Back to news", "See moments", "NEAIST Instagram"],
+            previewBadge: "Quiz . Games . Fun",
+            gratitudeTitle: "Thank you for coming 💫",
+            gratitudeText: "Thank you so much to everyone who came to our first event. It meant a lot to us and gave us even more motivation to keep creating special moments like this one. 🥹💫<br><br>For those who could not be there, do not worry — stay tuned, because many more updates and upcoming events are on the way. 💕✨",
+            recapTitle: "How the afternoon felt",
+            recapSubtitle: "A simple gathering, but one full of energy, sharing, and community.",
+            recapTitles: [
                 "An afternoon built around connection",
                 "Games, joy, and shared moments",
-                "Thanks to all the students"
+                "The first of many"
             ],
-            articleParagraphs: [
+            recapTexts: [
                 "On April 23, 2026, we gathered for a special Game Day in C9, designed as a simple but memorable moment of connection among students.",
                 "Between games, quizzes, conversations, and plenty of smiles, the afternoon came alive through the students who brought enthusiasm, openness, and the willingness to share time together in a warm atmosphere.",
-                "More than an informal activity, this gathering once again showed the value of creating spaces for pause, closeness, and community within academic life.",
-                "It was a beautiful and truly enriching experience for everyone who was able to show up, participate, and help shape the atmosphere throughout the event.",
-                "We leave our sincere thanks to all the students who attended and helped make this Game Day a special moment for NEAIST."
+                "This gathering once again showed the value of creating spaces for pause, closeness, and community within academic life. It was a beautiful and enriching experience for everyone who took part."
             ],
             mediaEyebrow: "Poster and video",
-            mediaTitle: "Relive the Game Day",
-            mediaText: "We are sharing the official poster and a short video to keep some of the energy of that afternoon alive.",
-            mediaCardTitles: ["Event poster", "Game Day video"],
+            mediaTitle: "Game Day moments",
+            mediaText: "A few records that keep the energy and atmosphere of that afternoon alive.",
+            mediaCardTitles: ["The invitation to Game Day", "A little of the energy we felt"],
             mediaCardTexts: [
-                "The poster shared before the gathering, with the April 23 date, the C9 venue, and the invitation to an afternoon of quiz, games, and fun.",
-                "A short video record to remember the atmosphere, student participation, and the great energy that shaped the event."
-            ]
+                "This was the image we used to invite the community to join us for an afternoon of quiz, games, and connection in C9.",
+                "A short record of the good mood, participation, and light atmosphere that shaped our first event."
+            ],
+            photoEyebrow: "More memories",
+            photoTitle: "Images from the gathering",
+            photoText: "Some of the moments that remained from this first NEAIST Game Day.",
+            ctaTitle: "Stay tuned for upcoming events",
+            ctaText: "NEAIST will keep creating moments of connection, sharing, and community. Follow us so you do not miss our next initiatives.",
+            ctaButton: "See more events"
         }
     },
     "noticia-tomada-posse-2026.html": {
@@ -1945,14 +1963,24 @@ function applyPageSpecificTranslations() {
         applyText(".article-hero .page-title", copy.heroTitle);
         applyText(".article-intro", copy.heroIntro);
         applyTextList(".article-actions .btn", copy.heroButtons);
-        applyTextList(".article-content h2", copy.articleTitles);
-        applyText(".article-lead", copy.articleParagraphs[0]);
-        applyTextList(".article-content p:not(.article-lead)", copy.articleParagraphs.slice(1));
+        applyText(".game-day-preview-badge", copy.previewBadge);
+        applyText(".game-day-gratitude-card h2", copy.gratitudeTitle);
+        applyHTML(".game-day-gratitude-card p", copy.gratitudeText);
+        applyText(".game-day-recap .section-heading h2", copy.recapTitle);
+        applyText(".game-day-recap .section-heading p", copy.recapSubtitle);
+        applyTextList(".game-day-recap-card h3", copy.recapTitles);
+        applyTextList(".game-day-recap-card p", copy.recapTexts);
         applyText(".media-section .eyebrow", copy.mediaEyebrow);
         applyText(".media-section .section-heading h2", copy.mediaTitle);
         applyText(".media-section .section-heading p", copy.mediaText);
         applyTextList(".article-media-card h3", copy.mediaCardTitles);
         applyTextList(".article-media-card > p", copy.mediaCardTexts);
+        applyText(".game-day-photo-gallery .eyebrow", copy.photoEyebrow);
+        applyText(".game-day-photo-gallery .section-heading h2", copy.photoTitle);
+        applyText(".game-day-photo-gallery .section-heading p", copy.photoText);
+        applyText(".game-day-cta-card h2", copy.ctaTitle);
+        applyText(".game-day-cta-card p", copy.ctaText);
+        applyText(".game-day-cta-card .btn", copy.ctaButton);
     }
 }
 

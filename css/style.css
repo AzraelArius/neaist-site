@@ -3129,6 +3129,258 @@ section {
         url("../images/news/game-day-2026-poster.png") center 20% / cover no-repeat;
 }
 
+.article-game-day-page {
+    background:
+        radial-gradient(circle at 88% 12%, rgba(220, 193, 159, 0.12), transparent 18%),
+        radial-gradient(circle at top left, rgba(27, 159, 224, 0.08), transparent 28%),
+        linear-gradient(180deg, #fbfdff 0%, #f5efe6 100%);
+}
+
+.game-day-hero {
+    min-height: auto;
+    padding-top: calc(88px + 2.25rem);
+    padding-bottom: 2.75rem;
+}
+
+.game-day-hero-grid {
+    display: grid;
+    grid-template-columns: minmax(0, 1.2fr) minmax(280px, 360px);
+    gap: clamp(1.5rem, 3vw, 2.5rem);
+    align-items: center;
+}
+
+.game-day-hero .article-hero-content {
+    max-width: none;
+}
+
+.game-day-hero .page-title {
+    max-width: 10ch;
+    font-size: clamp(2.9rem, 6vw, 4.7rem);
+}
+
+.game-day-hero .article-meta {
+    margin-bottom: 1.1rem;
+}
+
+.game-day-hero .article-intro {
+    max-width: 60ch;
+}
+
+.game-day-preview-card {
+    position: relative;
+    padding: 1rem;
+    border-radius: 30px;
+    background: rgba(255, 255, 255, 0.16);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    box-shadow: 0 24px 60px rgba(5, 15, 25, 0.24);
+    backdrop-filter: blur(10px);
+}
+
+.game-day-preview-badge {
+    display: inline-flex;
+    margin-bottom: 0.85rem;
+    padding: 0.38rem 0.8rem;
+    border-radius: 999px;
+    background: rgba(220, 193, 159, 0.18);
+    border: 1px solid rgba(220, 193, 159, 0.28);
+    color: var(--white);
+    font-size: 0.78rem;
+    font-weight: 800;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+}
+
+.game-day-preview-frame {
+    overflow: hidden;
+    border-radius: 22px;
+    background: rgba(255, 255, 255, 0.96);
+}
+
+.game-day-preview-frame img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.game-day-preview-meta {
+    margin: 0.85rem 0 0;
+    color: rgba(255, 255, 255, 0.88);
+    font-size: 0.9rem;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+}
+
+.article-game-day-page .article-actions {
+    gap: 0.85rem;
+}
+
+.article-game-day-page .article-actions .btn:nth-child(2),
+.article-game-day-page .article-actions .btn:nth-child(3) {
+    background: rgba(255, 255, 255, 0.08);
+}
+
+.game-day-gratitude,
+.game-day-recap,
+.game-day-media,
+.game-day-photo-gallery,
+.game-day-cta {
+    padding-top: clamp(2.4rem, 5vw, 4rem);
+}
+
+.game-day-gratitude {
+    padding-bottom: 0.5rem;
+}
+
+.game-day-gratitude-card {
+    max-width: 920px;
+    margin: 0 auto;
+    padding: clamp(1.6rem, 4vw, 2.5rem);
+    border-radius: 28px;
+    background: linear-gradient(135deg, rgba(220, 193, 159, 0.34), rgba(250, 245, 239, 0.98));
+    border: 1px solid rgba(220, 193, 159, 0.48);
+    border-left: 6px solid var(--neaist-sand);
+    box-shadow: 0 18px 40px rgba(16, 32, 51, 0.08);
+}
+
+.game-day-gratitude-card h2 {
+    margin-bottom: 0.9rem;
+    color: var(--primary-dark);
+}
+
+.game-day-gratitude-card p {
+    margin: 0;
+    max-width: 62ch;
+    color: var(--text-dark);
+    font-size: 1.05rem;
+    line-height: 1.85;
+}
+
+.game-day-recap {
+    padding-bottom: 0.75rem;
+}
+
+.game-day-recap .section-heading,
+.game-day-media .section-heading,
+.game-day-photo-gallery .section-heading {
+    margin-bottom: 2rem;
+}
+
+.game-day-recap-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: var(--spacing-lg);
+}
+
+.game-day-recap-card {
+    padding: 1.65rem;
+    border-radius: 24px;
+    background: rgba(255, 255, 255, 0.96);
+    border: 1px solid rgba(27, 159, 224, 0.1);
+    border-top: 4px solid var(--neaist-sand);
+    box-shadow: var(--box-shadow);
+}
+
+.game-day-recap-card h3 {
+    margin-bottom: 0.7rem;
+    color: #102033;
+    font-size: 1.4rem;
+}
+
+.game-day-recap-card p {
+    margin: 0;
+    color: #526477;
+    line-height: 1.75;
+}
+
+.game-day-media .article-media-card {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.game-day-media .article-media-card p {
+    margin-bottom: 1rem;
+}
+
+.game-day-media .article-poster-frame,
+.game-day-media .article-video-frame {
+    margin-top: auto;
+}
+
+.game-day-media .article-video-frame video {
+    min-height: 100%;
+    aspect-ratio: 4 / 5;
+    object-fit: cover;
+}
+
+.game-day-photo-gallery {
+    padding-bottom: 0.75rem;
+}
+
+.game-day-photo-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 1rem;
+}
+
+.game-day-photo-card {
+    overflow: hidden;
+    border-radius: 24px;
+    background: rgba(255, 255, 255, 0.96);
+    border: 1px solid rgba(27, 159, 224, 0.1);
+    box-shadow: var(--box-shadow);
+}
+
+.game-day-photo-card img {
+    width: 100%;
+    aspect-ratio: 4 / 5;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.35s ease;
+}
+
+.game-day-photo-card:hover img {
+    transform: scale(1.03);
+}
+
+.game-day-cta {
+    padding-bottom: 4.5rem;
+}
+
+.game-day-cta-card {
+    max-width: 980px;
+    margin: 0 auto;
+    padding: clamp(1.8rem, 4vw, 2.8rem);
+    border-radius: 30px;
+    background:
+        linear-gradient(180deg, rgba(16, 45, 61, 0.98), rgba(11, 29, 39, 0.98));
+    border: 1px solid rgba(220, 193, 159, 0.24);
+    box-shadow: var(--box-shadow-lg);
+    text-align: center;
+}
+
+.game-day-cta-card::before {
+    content: "";
+    display: block;
+    width: 92px;
+    height: 5px;
+    margin: 0 auto 1.1rem;
+    border-radius: 999px;
+    background: var(--neaist-sand);
+}
+
+.game-day-cta-card h2 {
+    color: var(--white);
+    margin-bottom: 0.75rem;
+}
+
+.game-day-cta-card p {
+    max-width: 60ch;
+    margin: 0 auto 1.4rem;
+    color: rgba(255, 255, 255, 0.82);
+}
+
 .instagram-frame {
     display: flex;
     justify-content: center;
@@ -3423,6 +3675,28 @@ section {
 
     .article-media-grid {
         grid-template-columns: 1fr;
+    }
+
+    .game-day-hero-grid,
+    .game-day-recap-grid,
+    .game-day-photo-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .game-day-hero {
+        padding-bottom: 2rem;
+    }
+
+    .game-day-preview-card {
+        max-width: 420px;
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .game-day-gratitude-card,
+    .game-day-cta-card {
+        padding-left: 1.4rem;
+        padding-right: 1.4rem;
     }
     
     .timeline::before {
