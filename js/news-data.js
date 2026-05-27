@@ -33,6 +33,7 @@ const NEWS_ITEMS = [
     {
         slug: 'dia-de-africa-2026',
         date: '2026-05-23',
+        homepagePriority: 2,
         categoryId: 'eventos',
         image: 'images/news/dia-de-africa-no-tecnico-2026.jpeg',
         url: 'dia-de-africa.html',
@@ -76,23 +77,29 @@ const NEWS_ITEMS = [
     },
     {
         slug: 'semana-de-africa-ulisboa',
-        date: '2026-05-09',
+        date: '2026-05-25',
+        homepagePriority: 1,
         categoryId: 'eventos',
         image: 'images/news/semana-de-africa-ulisboa.jpg',
-        url: 'https://www.ulisboa.pt/evento/sem-margem-semana-de-africa-da-ulisboa',
-        external: true,
+        url: 'semana-africa-ulisboa.html',
         copy: {
             pt: {
                 category: 'Eventos',
-                title: 'Semana de África / ULisboa',
-                excerpt: 'Participação e colaboração em iniciativas ligadas à Semana de África na Universidade de Lisboa.',
-                cta: 'Ler mais'
+                secondaryTag: 'ULisboa',
+                dateLabel: '25 a 30 de Maio de 2026',
+                alt: 'Cartaz da Semana de África Sem Margem da Universidade de Lisboa',
+                title: 'Semana de África ULisboa — Sem Margem',
+                excerpt: 'A Universidade de Lisboa promoveu a Semana de África “Sem Margem”, uma iniciativa dedicada à cultura, história, pensamento, gastronomia e expressões artísticas africanas, com participação do NEAIST através do Africa Quiz Challenge.',
+                cta: 'Ver destaque'
             },
             en: {
                 category: 'Events',
-                title: 'Africa Week / ULisboa',
-                excerpt: 'Participation and collaboration in initiatives linked to Africa Week at the University of Lisbon.',
-                cta: 'Read more'
+                secondaryTag: 'ULisboa',
+                dateLabel: 'May 25 to 30, 2026',
+                alt: 'Poster of the Sem Margem Africa Week at the University of Lisbon',
+                title: 'ULisboa Africa Week — Sem Margem',
+                excerpt: 'The University of Lisbon promoted Sem Margem Africa Week, an initiative dedicated to African culture, history, thought, gastronomy, and artistic expression, with NEAIST participating through the Africa Quiz Challenge.',
+                cta: 'View highlight'
             }
         }
     },
@@ -208,6 +215,10 @@ function formatNewsDate(dateString) {
     }).format(new Date(`${dateString}T12:00:00`));
 }
 
+function getNewsDateLabel(item) {
+    return getLocalizedNewsValue(item, 'dateLabel') || formatNewsDate(item.date);
+}
+
 function renderNewsMedia(item) {
     if (item.image) {
         return `
@@ -243,7 +254,7 @@ function renderNewsCard(item, showButton = true) {
             ${renderNewsMedia(item)}
             <div class="highlight-body">
                 ${tagMarkup}
-                <p class="news-date">${formatNewsDate(item.date)}</p>
+                <p class="news-date">${getNewsDateLabel(item)}</p>
                 <h3 class="highlight-title">${title}</h3>
                 <p class="highlight-description">${excerpt}</p>
                 ${showButton ? `<a class="news-card-link" href="${href}"${target}>${cta || (window.currentLanguage === 'en' ? 'Read more' : 'Ler mais')}</a>` : ''}
@@ -259,7 +270,9 @@ function renderHomepageNews() {
         return;
     }
 
-    const items = sortNewsItems().slice(0, 3);
+    const items = [...sortNewsItems()]
+        .sort((a, b) => (b.homepagePriority || 0) - (a.homepagePriority || 0) || b.date.localeCompare(a.date))
+        .slice(0, 3);
     homeContainer.innerHTML = items.map((item, index) => {
         const markup = renderNewsCard(item, true);
         return markup.replace('fade-in-up', `fade-in-up${index ? ` delay-${index}` : ''}`);

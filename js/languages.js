@@ -1444,7 +1444,7 @@ const pageCopy = {
                 "No encerramento desta página, destacamos também a Semana de África Sem Margem, uma iniciativa que amplia a presença da cultura africana no universo da Universidade de Lisboa.",
                 "O cartaz reforça a continuidade desta celebração para além do Técnico e ajuda a ligar diferentes espaços, comunidades e momentos de encontro em torno da identidade africana."
             ],
-            spotlightButton: "Ver mais destaques"
+            spotlightButton: "Ver destaque"
         },
         en: {
             title: "Africa Day at Técnico | NEAIST",
@@ -1494,7 +1494,79 @@ const pageCopy = {
                 "At the end of this page, we also highlight Sem Margem Africa Week, an initiative that extends the presence of African culture across the University of Lisbon environment.",
                 "This poster reinforces the continuity of the celebration beyond Técnico and helps connect different spaces, communities, and gathering moments around African identity."
             ],
-            spotlightButton: "See more highlights"
+            spotlightButton: "View highlight"
+        }
+    },
+    "semana-africa-ulisboa.html": {
+        pt: {
+            title: "Semana de África ULisboa — Sem Margem | NEAIST",
+            description: "Participação do NEAIST na Semana de África Sem Margem, iniciativa da Universidade de Lisboa dedicada à cultura africana, ao pensamento e ao encontro entre comunidades académicas.",
+            heroMeta: "25 a 30 de Maio de 2026",
+            heroTitle: "Semana de África ULisboa — Sem Margem",
+            heroSubtitle: "Participação do NEAIST na programação da Universidade de Lisboa",
+            heroIntro: "A Semana de África “Sem Margem” foi uma iniciativa da Universidade de Lisboa dedicada à valorização da cultura africana, cruzando conversas, literatura, música, gastronomia, exposições, oficinas e momentos de encontro entre comunidades académicas.",
+            heroButtons: ["Voltar às notícias", "Página oficial da ULisboa"],
+            participationKicker: "Participação institucional",
+            participationTitle: "Participação do NEAIST",
+            participationTexts: [
+                "O NEAIST integrou esta programação através do Africa Quiz Challenge: Challenge the Narrative, um quiz presencial organizado pelo Núcleo de Estudantes Africanos do Técnico ULisboa, realizado no Caleidoscópio.",
+                "Mais do que uma atividade de entretenimento, o quiz procurou promover o conhecimento sobre África de forma participativa, moderna e acessível, juntando espírito de equipa, curiosidade e reflexão."
+            ],
+            highlightKicker: "Atividade em destaque",
+            quizTitle: "Africa Quiz Challenge: Challenge the Narrative",
+            quizLabels: ["Data", "Hora", "Local", "Organização"],
+            quizValues: ["28 de Maio", "16h00", "Caleidoscópio", "Núcleo de Estudantes Africanos do Técnico ULisboa"],
+            quizText: "Este quiz aconteceu em formato de trívia presencial, onde equipas competiram respondendo a perguntas entregues no momento. Antes de cada ronda, um sorteio definiu o tema, dando à atividade um ritmo mais espontâneo, divertido e imprevisível.",
+            quizButton: "Ver página oficial da ULisboa",
+            timelineKicker: "Programa selecionado",
+            timelineTitle: "Momentos em destaque",
+            timelineText: "Uma seleção compacta de iniciativas da Semana de África Sem Margem, com ligação à página oficial da ULisboa para o programa completo.",
+            timelineItems: [
+                "28 de Maio, 10h00 — África e Portugal: Saberes, Mobilidades e Futuro Universitário",
+                "28 de Maio, 12h00 — Sabores de África",
+                "28 de Maio, 16h00 — Africa Quiz Challenge: Challenge the Narrative",
+                "28 de Maio, 17h30 — Oficina Performar Poesia",
+                "29 de Maio, 17h30 — Pensar África a partir da literatura",
+                "30 de Maio, 14h00 — Festa de Encerramento"
+            ],
+            finalTitle: "Explorar o programa completo",
+            finalText: "Para conhecer o enquadramento completo da iniciativa e acompanhar o restante programa da Universidade de Lisboa, consulta a página oficial da Semana de África Sem Margem.",
+            finalButton: "Ver página oficial da ULisboa"
+        },
+        en: {
+            title: "ULisboa Africa Week — Sem Margem | NEAIST",
+            description: "NEAIST participation in Sem Margem Africa Week, a University of Lisbon initiative dedicated to African culture, thought, and shared academic encounters.",
+            heroMeta: "May 25 to 30, 2026",
+            heroTitle: "ULisboa Africa Week — Sem Margem",
+            heroSubtitle: "NEAIST participation in the University of Lisbon programme",
+            heroIntro: "Sem Margem Africa Week was a University of Lisbon initiative dedicated to valuing African culture, bringing together conversations, literature, music, gastronomy, exhibitions, workshops, and moments of exchange across academic communities.",
+            heroButtons: ["Back to news", "Official ULisboa page"],
+            participationKicker: "Institutional participation",
+            participationTitle: "NEAIST Participation",
+            participationTexts: [
+                "NEAIST joined this programme through Africa Quiz Challenge: Challenge the Narrative, an in-person quiz organized by the African Students' Association of Técnico ULisboa and held at Caleidoscópio.",
+                "More than an entertainment activity, the quiz aimed to promote knowledge about Africa in a participatory, modern, and accessible way, bringing together teamwork, curiosity, and reflection."
+            ],
+            highlightKicker: "Featured activity",
+            quizTitle: "Africa Quiz Challenge: Challenge the Narrative",
+            quizLabels: ["Date", "Time", "Location", "Organization"],
+            quizValues: ["May 28", "4:00 PM", "Caleidoscópio", "African Students' Association of Técnico ULisboa"],
+            quizText: "This quiz took place as an in-person trivia activity, where teams competed by answering questions handed out on the spot. Before each round, a draw defined the topic, giving the activity a more spontaneous, playful, and unpredictable rhythm.",
+            quizButton: "View the official ULisboa page",
+            timelineKicker: "Selected programme",
+            timelineTitle: "Highlighted moments",
+            timelineText: "A compact selection of Sem Margem Africa Week activities, with a link to the official ULisboa page for the full programme.",
+            timelineItems: [
+                "May 28, 10:00 AM — Africa and Portugal: Knowledge, Mobilities, and the University Future",
+                "May 28, 12:00 PM — Flavours of Africa",
+                "May 28, 4:00 PM — Africa Quiz Challenge: Challenge the Narrative",
+                "May 28, 5:30 PM — Performing Poetry Workshop",
+                "May 29, 5:30 PM — Thinking Africa through literature",
+                "May 30, 2:00 PM — Closing Celebration"
+            ],
+            finalTitle: "Explore the full programme",
+            finalText: "To see the full context of the initiative and follow the rest of the University of Lisbon programme, visit the official Sem Margem Africa Week page.",
+            finalButton: "View the official ULisboa page"
         }
     },
     "noticia-game-day-2026.html": {
@@ -1920,10 +1992,10 @@ function applyPageSpecificTranslations() {
         applyTextList(".event-meta-label", copy.metaLabels);
         applyTextList(".event-meta-value", copy.metaValues);
         applyText(".event-support-note", copy.supportNote);
-        applyTextList(".event-actions .btn", copy.buttons);
-        applyText(".schedule-section .section-kicker", copy.agendaKicker);
-        applyText(".schedule-section .section-title", copy.agendaTitle);
-        applyText(".schedule-section .section-subtitle", copy.agendaSubtitle);
+        applyTextList(".event-hero .event-link-row .btn", copy.buttons);
+        applyText(".agenda-section .section-kicker", copy.agendaKicker);
+        applyText(".agenda-section .section-title", copy.agendaTitle);
+        applyText(".agenda-section .section-subtitle", copy.agendaSubtitle);
         applyTextList(".agenda-table thead th", copy.agendaHeaders);
         applyTextList(".agenda-table tbody td:nth-child(2)", copy.agendaRows);
         applyText(".merch-preview .section-kicker", copy.merchKicker);
@@ -1935,6 +2007,40 @@ function applyPageSpecificTranslations() {
         applyText(".event-spotlight-section .page-title", copy.spotlightTitle);
         applyTextList(".event-spotlight-section .event-copy > p:not(.page-subtitle)", copy.spotlightTexts);
         applyText(".event-spotlight-section .btn", copy.spotlightButton);
+        return;
+    }
+
+    if (pageName === "semana-africa-ulisboa.html") {
+        applyText(".ulisboa-hero-tags .article-category-pill:first-child", currentLanguage === "en" ? "Events" : "Eventos");
+        applyText(".ulisboa-hero-tags .article-category-pill-secondary", "ULisboa");
+        applyText(".ulisboa-hero-copy .article-meta", copy.heroMeta);
+        applyText(".ulisboa-hero-copy .page-title", copy.heroTitle);
+        applyText(".ulisboa-hero-copy .page-subtitle", copy.heroSubtitle);
+        applyText(".ulisboa-hero-copy .hero-intro", copy.heroIntro);
+        applyTextList(".ulisboa-hero-actions .btn", copy.heroButtons);
+        applyAttr(
+            ".ulisboa-poster-card img",
+            "alt",
+            currentLanguage === "en"
+                ? "Poster of the Sem Margem Africa Week at the University of Lisbon"
+                : "Cartaz da Semana de África Sem Margem da Universidade de Lisboa"
+        );
+        applyText(".ulisboa-participation-copy .section-kicker", copy.participationKicker);
+        applyText(".ulisboa-participation-copy h2", copy.participationTitle);
+        applyTextList(".ulisboa-participation-copy > p", copy.participationTexts);
+        applyText(".ulisboa-quiz-card .section-kicker", copy.highlightKicker);
+        applyText(".ulisboa-quiz-card h3", copy.quizTitle);
+        applyTextList(".ulisboa-quiz-meta-label", copy.quizLabels);
+        applyTextList(".ulisboa-quiz-meta-value", copy.quizValues);
+        applyText(".ulisboa-quiz-card > p", copy.quizText);
+        applyText(".ulisboa-quiz-card .btn", copy.quizButton);
+        applyText(".ulisboa-timeline .section-kicker", copy.timelineKicker);
+        applyText(".ulisboa-timeline .section-title", copy.timelineTitle);
+        applyText(".ulisboa-timeline .section-subtitle", copy.timelineText);
+        applyTextList(".ulisboa-timeline-list li", copy.timelineItems);
+        applyText(".ulisboa-final-card h2", copy.finalTitle);
+        applyText(".ulisboa-final-card p", copy.finalText);
+        applyText(".ulisboa-final-card .btn", copy.finalButton);
         return;
     }
 
