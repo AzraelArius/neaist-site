@@ -15,6 +15,7 @@ const translations = {
         nav_study_squads: "Study Squads",
         nav_news: "Notícias",
         nav_gallery: "Galeria",
+        nav_africa_day: "Dia de África",
         nav_resources: "Recursos",
         nav_guide: "Guia do Caloiro",
         nav_mentoring: "Programa Mentorado",
@@ -358,6 +359,7 @@ const translations = {
         nav_study_squads: "Study Squads",
         nav_news: "News",
         nav_gallery: "Gallery",
+        nav_africa_day: "Africa Day",
         nav_resources: "Resources",
         nav_guide: "Freshman Guide",
         nav_mentoring: "Mentoring Program",
@@ -1434,7 +1436,15 @@ const pageCopy = {
             merchKicker: "Merchandising",
             merchTitle: "Preview da Loja",
             merchSubtitle: "A loja do NEAIST reúne os artigos oficiais do núcleo com preços, variantes e acesso direto ao formulário de encomenda.",
-            merchButton: "Ver Loja"
+            merchButton: "Ver Loja",
+            spotlightKicker: "Também em destaque",
+            spotlightSubtitle: "Semana de África ULisboa",
+            spotlightTitle: "Semana de África Sem Margem",
+            spotlightTexts: [
+                "No encerramento desta página, destacamos também a Semana de África Sem Margem, uma iniciativa que amplia a presença da cultura africana no universo da Universidade de Lisboa.",
+                "O cartaz reforça a continuidade desta celebração para além do Técnico e ajuda a ligar diferentes espaços, comunidades e momentos de encontro em torno da identidade africana."
+            ],
+            spotlightButton: "Ver mais destaques"
         },
         en: {
             title: "Africa Day at Técnico | NEAIST",
@@ -1476,7 +1486,15 @@ const pageCopy = {
             merchKicker: "Merchandising",
             merchTitle: "Shop Preview",
             merchSubtitle: "The NEAIST shop gathers the association's official items with prices, variants, and direct access to the order form.",
-            merchButton: "Visit the Shop"
+            merchButton: "Visit the Shop",
+            spotlightKicker: "Also featured",
+            spotlightSubtitle: "Africa Week ULisboa",
+            spotlightTitle: "Sem Margem Africa Week",
+            spotlightTexts: [
+                "At the end of this page, we also highlight Sem Margem Africa Week, an initiative that extends the presence of African culture across the University of Lisbon environment.",
+                "This poster reinforces the continuity of the celebration beyond Técnico and helps connect different spaces, communities, and gathering moments around African identity."
+            ],
+            spotlightButton: "See more highlights"
         }
     },
     "noticia-tomada-posse-2026.html": {
@@ -1646,7 +1664,7 @@ function applyCommonTranslations() {
         getTranslationValue("nav_about"),
         getTranslationValue("nav_shop"),
         getTranslationValue("nav_news"),
-        getTranslationValue("nav_gallery"),
+        getTranslationValue("nav_africa_day"),
         getTranslationValue("nav_resources"),
         getTranslationValue("nav_contact")
     ]);
@@ -1836,6 +1854,11 @@ function applyPageSpecificTranslations() {
         applyText(".merch-preview .section-title", copy.merchTitle);
         applyText(".merch-preview .section-subtitle", copy.merchSubtitle);
         applyText(".merch-preview .btn", copy.merchButton);
+        applyText(".event-spotlight-section .section-kicker", copy.spotlightKicker);
+        applyText(".event-spotlight-section .page-subtitle", copy.spotlightSubtitle);
+        applyText(".event-spotlight-section .page-title", copy.spotlightTitle);
+        applyTextList(".event-spotlight-section .event-copy > p:not(.page-subtitle)", copy.spotlightTexts);
+        applyText(".event-spotlight-section .btn", copy.spotlightButton);
         return;
     }
 

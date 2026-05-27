@@ -11,6 +11,7 @@ pages = {
     'loja.html': 'Loja',
     'noticias.html': 'Notícias',
     'galeria.html': 'Galeria',
+    'dia-de-africa.html': 'Dia de África',
     'sobre-nos.html': 'Sobre Nós',
     'contactos.html': 'Contactos',
     'recursos.html': 'Recursos',
@@ -37,7 +38,7 @@ nav_template = '''                    <ul class="nav-list">
                             </ul>
                         </li>
                         <li class="nav-item"><a href="noticias.html" class="nav-link{news_active}" data-i18n="nav_news">Notícias</a></li>
-                        <li class="nav-item"><a href="galeria.html" class="nav-link{gallery_active}" data-i18n="nav_gallery">Galeria</a></li>
+                        <li class="nav-item"><a href="dia-de-africa.html" class="nav-link{africa_day_active}" data-i18n="nav_africa_day">Dia de África</a></li>
                         <li class="nav-item"><a href="contactos.html" class="nav-link{contact_active}" data-i18n="nav_contact">Contactos</a></li>
                         <li class="nav-item"><a href="https://docs.google.com/forms/d/e/1FAIpQLSeaPowt7ku00SvK6ykEAOBPSun59V1UjDE_cMkKSTwUMCJJ-Q/viewform?usp=header" class="nav-link nav-link-cta" target="_blank" rel="noopener" data-i18n="nav_recruitment">Recrutamento</a></li>
                         <li class="nav-item language-switcher">
@@ -59,6 +60,7 @@ def update_navigation(filename, content):
         'study_active': '',
         'news_active': '',
         'gallery_active': '',
+        'africa_day_active': '',
         'resources_active': '',
         'guide_active': '',
         'mentoring_active': '',
@@ -75,6 +77,8 @@ def update_navigation(filename, content):
         active_flags['news_active'] = ' active'
     elif 'galeria.html' in filename:
         active_flags['gallery_active'] = ' active'
+    elif 'dia-de-africa.html' in filename:
+        active_flags['africa_day_active'] = ' active'
     elif 'recursos.html' in filename:
         active_flags['academic_active'] = ' active'
         active_flags['resources_active'] = ' active'
