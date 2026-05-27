@@ -1440,8 +1440,8 @@ const pageCopy = {
             spotlightSubtitle: "Semana de África ULisboa",
             spotlightTitle: "Semana de África Sem Margem",
             spotlightTexts: [
-                "No encerramento desta página, destacamos também a Semana de África Sem Margem, uma iniciativa que amplia a presença da cultura africana no universo da Universidade de Lisboa.",
-                "O cartaz reforça a continuidade desta celebração para além do Técnico e ajuda a ligar diferentes espaços, comunidades e momentos de encontro em torno da identidade africana."
+                "A Semana de África da ULisboa está a decorrer com uma programação dedicada à cultura, história, literatura, gastronomia, música e expressões artísticas africanas.",
+                "O NEAIST junta-se a esta iniciativa como parte de um movimento maior: aproximar comunidades, desafiar narrativas e celebrar a presença africana na vida académica."
             ],
             spotlightButton: "Ver destaque"
         },
@@ -1489,8 +1489,8 @@ const pageCopy = {
             spotlightSubtitle: "Africa Week ULisboa",
             spotlightTitle: "Sem Margem Africa Week",
             spotlightTexts: [
-                "At the end of this page, we also highlight Sem Margem Africa Week, an initiative that extends the presence of African culture across the University of Lisbon environment.",
-                "This poster reinforces the continuity of the celebration beyond Técnico and helps connect different spaces, communities, and gathering moments around African identity."
+                "ULisboa Africa Week is taking place with a programme dedicated to African culture, history, literature, gastronomy, music, and artistic expressions.",
+                "NEAIST joins this initiative as part of a broader movement: bringing communities closer together, challenging narratives, and celebrating the African presence in academic life."
             ],
             spotlightButton: "View highlight"
         }
