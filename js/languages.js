@@ -1502,7 +1502,10 @@ const pageCopy = {
             heroMeta: "25 a 30 de Maio de 2026",
             heroTitle: "Semana de África ULisboa — Sem Margem",
             heroSubtitle: "Participação do NEAIST na programação da Universidade de Lisboa",
-            heroIntro: "A Semana de África “Sem Margem” foi uma iniciativa da Universidade de Lisboa dedicada à valorização da cultura africana, cruzando conversas, literatura, música, gastronomia, exposições, oficinas e momentos de encontro entre comunidades académicas.",
+            heroIntros: [
+                "A Semana de África da ULisboa está a decorrer com uma programação dedicada à cultura, história, literatura, gastronomia, música e expressões artísticas africanas.",
+                "O NEAIST junta-se a esta iniciativa como parte de um movimento maior: aproximar comunidades, desafiar narrativas e celebrar a presença africana na vida académica."
+            ],
             heroButtons: ["Voltar às notícias", "Página oficial da ULisboa"],
             participationKicker: "Participação institucional",
             participationTitle: "Participação do NEAIST",
@@ -1537,7 +1540,10 @@ const pageCopy = {
             heroMeta: "May 25 to 30, 2026",
             heroTitle: "ULisboa Africa Week — Sem Margem",
             heroSubtitle: "NEAIST participation in the University of Lisbon programme",
-            heroIntro: "Sem Margem Africa Week was a University of Lisbon initiative dedicated to valuing African culture, bringing together conversations, literature, music, gastronomy, exhibitions, workshops, and moments of exchange across academic communities.",
+            heroIntros: [
+                "ULisboa Africa Week is taking place with a programme dedicated to African culture, history, literature, gastronomy, music, and artistic expressions.",
+                "NEAIST joins this initiative as part of a broader movement: bringing communities closer together, challenging narratives, and celebrating the African presence in academic life."
+            ],
             heroButtons: ["Back to news", "Official ULisboa page"],
             participationKicker: "Institutional participation",
             participationTitle: "NEAIST Participation",
@@ -2014,7 +2020,7 @@ function applyPageSpecificTranslations() {
         applyText(".ulisboa-hero-copy .article-meta", copy.heroMeta);
         applyText(".ulisboa-hero-copy .page-title", copy.heroTitle);
         applyText(".ulisboa-hero-copy .page-subtitle", copy.heroSubtitle);
-        applyText(".ulisboa-hero-copy .hero-intro", copy.heroIntro);
+        applyTextList(".ulisboa-hero-copy .hero-intro", copy.heroIntros);
         applyTextList(".ulisboa-hero-actions .btn", copy.heroButtons);
         applyAttr(
             ".ulisboa-poster-card img",
