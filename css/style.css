@@ -71,6 +71,11 @@ html {
     font-size: 16px;
 }
 
+section,
+[id] {
+    scroll-margin-top: 140px;
+}
+
 body {
     font-family: var(--font-primary);
     color: var(--text-dark);
@@ -129,15 +134,15 @@ img {
 
 /* ========== Navigation ========== */
 .navbar {
-    position: fixed;
+    position: sticky;
     top: 0;
     left: 0;
     width: 100%;
-    background: rgba(255, 255, 255, 0.9);
+    background: rgba(255, 255, 255, 0.94);
     backdrop-filter: blur(18px);
     box-shadow: var(--box-shadow);
     border-bottom: 1px solid rgba(27, 159, 224, 0.08);
-    z-index: 1000;
+    z-index: 9999;
     transition: var(--transition);
 }
 
@@ -393,7 +398,7 @@ img {
     grid-template-columns: minmax(0, 1fr) minmax(360px, 0.9fr);
     gap: var(--spacing-xl);
     align-items: center;
-    padding-top: calc(88px + 2rem);
+    padding-top: 2rem;
     padding-bottom: 5rem;
 }
 
@@ -2651,7 +2656,7 @@ section {
 
 .study-hero {
     position: relative;
-    padding-top: calc(88px + var(--spacing-xxl));
+    padding-top: var(--spacing-xxl);
     padding-bottom: var(--spacing-xxl);
 }
 
@@ -2882,7 +2887,7 @@ section {
     min-height: 76vh;
     display: flex;
     align-items: center;
-    padding-top: calc(88px + 2rem);
+    padding-top: 2rem;
     padding-bottom: 4rem;
     background:
         linear-gradient(90deg, rgba(5, 15, 25, 0.9) 0%, rgba(5, 15, 25, 0.58) 46%, rgba(5, 15, 25, 0.46) 100%),
@@ -3186,7 +3191,7 @@ section {
 
 .game-day-hero {
     min-height: auto;
-    padding-top: calc(88px + 2.25rem);
+    padding-top: 2.25rem;
     padding-bottom: 2.75rem;
 }
 
@@ -3443,7 +3448,7 @@ section {
 
 .ulisboa-hero {
     min-height: auto;
-    padding-top: calc(88px + 2.5rem);
+    padding-top: 2.5rem;
     padding-bottom: 3rem;
     background:
         linear-gradient(90deg, rgba(8, 21, 34, 0.94) 0%, rgba(8, 21, 34, 0.76) 48%, rgba(8, 21, 34, 0.52) 100%),
@@ -3824,7 +3829,7 @@ section {
 
     .hero-shell {
         grid-template-columns: 1fr;
-        padding-top: calc(88px + 1.5rem);
+        padding-top: 1.5rem;
         padding-bottom: 4.5rem;
     }
     
@@ -3961,7 +3966,7 @@ section {
 
     .news-article-hero {
         min-height: 72vh;
-        padding-top: calc(88px + 2rem);
+        padding-top: 2rem;
         padding-bottom: 3rem;
         background-position: center 26%;
     }
