@@ -995,24 +995,26 @@ section {
 }
 
 .merch-preview-banner {
-    grid-template-columns: minmax(0, 1fr) minmax(340px, 430px);
-    gap: clamp(1.4rem, 3vw, 2.4rem);
+    grid-template-columns: 1fr;
+    gap: clamp(1.25rem, 2.6vw, 1.8rem);
 }
 
 .merch-preview-copy {
-    max-width: 60ch;
+    max-width: 62ch;
 }
 
 .merch-preview-side {
     display: grid;
-    gap: 1rem;
+    gap: 1.15rem;
     justify-items: center;
     align-content: center;
+    width: 100%;
 }
 
 .merch-preview-visual {
     display: block;
     width: 100%;
+    max-width: 760px;
     overflow: hidden;
     border-radius: 28px;
     border: 1px solid rgba(27, 159, 224, 0.12);
@@ -1037,6 +1039,7 @@ section {
     width: auto;
     max-width: none;
     min-width: 168px;
+    margin: 0 auto;
 }
 
 .news-filters {
@@ -3860,11 +3863,11 @@ section {
     }
 
     .merch-preview-side {
-        justify-items: stretch;
+        justify-items: center;
     }
 
     .merch-preview-visual {
-        max-width: 420px;
+        max-width: 100%;
         width: 100%;
         margin: 0 auto;
     }
