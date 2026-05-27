@@ -1432,15 +1432,9 @@ const pageCopy = {
                 "Momento informal pós-evento / Sunset Picnic"
             ],
             merchKicker: "Merchandising",
-            merchTitle: "Artigos NEAIST",
-            merchSubtitle: "A loja do NEAIST já reúne alguns dos artigos oficiais disponíveis para encomenda através do formulário.",
-            merchTitles: ["Garrafa NEAIST", "Boné NEAIST", "Tote Bag NEAIST"],
-            merchTexts: [
-                "Uma peça pensada para acompanhar atividades do núcleo e reforçar a identidade visual do NEAIST.",
-                "Uma proposta simples e versátil para representar o núcleo em eventos, encontros e atividades no campus.",
-                "Um artigo prático e institucional que poderá integrar futuras edições de merchandising do NEAIST."
-            ],
-            merchNote: "Consulta a nova página da Loja para veres preços, variantes e o formulário oficial de encomenda."
+            merchTitle: "Preview da Loja",
+            merchSubtitle: "A loja do NEAIST reúne os artigos oficiais do núcleo com preços, variantes e acesso direto ao formulário de encomenda.",
+            merchButton: "Ver Loja"
         },
         en: {
             title: "Africa Day at Técnico | NEAIST",
@@ -1480,15 +1474,9 @@ const pageCopy = {
                 "Informal post-event moment / Sunset Picnic"
             ],
             merchKicker: "Merchandising",
-            merchTitle: "NEAIST items",
-            merchSubtitle: "NEAIST's shop now gathers some of the official items available to order through the form.",
-            merchTitles: ["NEAIST Bottle", "NEAIST Cap", "NEAIST Tote Bag"],
-            merchTexts: [
-                "A piece designed to accompany association activities and strengthen NEAIST’s visual identity.",
-                "A simple and versatile option to represent the association at events, gatherings, and campus activities.",
-                "A practical and institutional item that may become part of future NEAIST merchandise releases."
-            ],
-            merchNote: "Visit the new Shop page to see prices, variants, and the official order form."
+            merchTitle: "Shop Preview",
+            merchSubtitle: "The NEAIST shop gathers the association's official items with prices, variants, and direct access to the order form.",
+            merchButton: "Visit the Shop"
         }
     },
     "noticia-tomada-posse-2026.html": {
@@ -1847,9 +1835,7 @@ function applyPageSpecificTranslations() {
         applyText(".merch-preview .section-kicker", copy.merchKicker);
         applyText(".merch-preview .section-title", copy.merchTitle);
         applyText(".merch-preview .section-subtitle", copy.merchSubtitle);
-        applyTextList(".merch-card h3", copy.merchTitles);
-        applyTextList(".merch-card p", copy.merchTexts);
-        applyText(".merch-note", copy.merchNote);
+        applyText(".merch-preview .btn", copy.merchButton);
         return;
     }
 
