@@ -994,6 +994,36 @@ section {
     margin-bottom: 0;
 }
 
+.merch-preview-banner {
+    grid-template-columns: minmax(0, 1fr) minmax(240px, 320px) auto;
+}
+
+.merch-preview-copy {
+    max-width: 60ch;
+}
+
+.merch-preview-visual {
+    display: block;
+    overflow: hidden;
+    border-radius: 24px;
+    border: 1px solid rgba(27, 159, 224, 0.12);
+    background: rgba(255, 255, 255, 0.96);
+    box-shadow: 0 16px 40px rgba(16, 32, 51, 0.1);
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.merch-preview-visual:hover,
+.merch-preview-visual:focus-visible {
+    transform: translateY(-3px);
+    box-shadow: 0 22px 48px rgba(16, 32, 51, 0.14);
+}
+
+.merch-preview-visual img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
 .news-filters {
     display: flex;
     flex-wrap: wrap;
@@ -3804,6 +3834,20 @@ section {
 
     .archive-intro-card {
         display: grid;
+    }
+
+    .merch-preview-banner {
+        grid-template-columns: 1fr;
+    }
+
+    .merch-preview-copy {
+        max-width: none;
+    }
+
+    .merch-preview-visual {
+        max-width: 420px;
+        width: 100%;
+        margin: 0 auto;
     }
 
     .gallery-overview {
