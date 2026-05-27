@@ -75,27 +75,6 @@ const NEWS_ITEMS = [
         }
     },
     {
-        slug: 'faist-2026',
-        date: '2026-05-16',
-        categoryId: 'institucional',
-        placeholderLabel: 'FAIST',
-        url: 'noticias.html#faist-2026',
-        copy: {
-            pt: {
-                category: 'Institucional',
-                title: 'Participação no FAIST',
-                excerpt: 'O NEAIST participou no Fórum Associativo do IST, reforçando a sua presença no associativismo estudantil.',
-                cta: 'Ler mais'
-            },
-            en: {
-                category: 'Institutional',
-                title: 'Participation in FAIST',
-                excerpt: 'NEAIST took part in the IST Associative Forum, reinforcing its presence in student association life.',
-                cta: 'Read more'
-            }
-        }
-    },
-    {
         slug: 'semana-de-africa-ulisboa',
         date: '2026-05-09',
         categoryId: 'eventos',
@@ -160,22 +139,27 @@ const NEWS_ITEMS = [
         }
     },
     {
-        slug: 'game-afternoon',
-        date: '2026-02-18',
+        slug: 'game-day-2026',
+        date: '2026-04-23',
         categoryId: 'eventos',
-        placeholderLabel: 'Game Afternoon',
-        url: 'noticias.html#game-afternoon',
+        image: 'images/news/game-day-2026-poster.png',
+        mediaFit: 'contain',
+        url: 'noticia-game-day-2026.html',
         copy: {
             pt: {
                 category: 'Eventos',
-                title: 'Game Afternoon',
-                excerpt: 'Um momento informal de convívio, integração e comunidade entre estudantes.',
+                secondaryTag: 'Comunidade',
+                alt: 'Cartaz do Game Day do NEAIST com data de 23 de Abril e local C9',
+                title: 'Game Day NEAIST',
+                excerpt: 'No dia 23 de Abril de 2026, o NEAIST viveu uma tarde de jogos, convívio e alegria, agradecendo a todos os estudantes que tornaram esta experiência tão enriquecedora.',
                 cta: 'Ler mais'
             },
             en: {
                 category: 'Events',
-                title: 'Game Afternoon',
-                excerpt: 'An informal moment of community, integration, and student connection.',
+                secondaryTag: 'Community',
+                alt: 'NEAIST Game Day poster with the April 23 date and the C9 location',
+                title: 'NEAIST Game Day',
+                excerpt: 'On April 23, 2026, NEAIST enjoyed an afternoon of games, connection, and joy, with thanks to all the students who made it such an enriching experience.',
                 cta: 'Read more'
             }
         }

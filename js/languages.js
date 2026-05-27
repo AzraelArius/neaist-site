@@ -1497,6 +1497,64 @@ const pageCopy = {
             spotlightButton: "See more highlights"
         }
     },
+    "noticia-game-day-2026.html": {
+        pt: {
+            title: "Game Day NEAIST | 23 de Abril de 2026",
+            description: "Notícia do NEAIST sobre o Game Day de 23 de Abril de 2026, uma tarde de jogos, convívio e comunidade entre estudantes no Técnico.",
+            heroMeta: "Eventos · 23 de Abril de 2026",
+            heroTitle: "Game Day NEAIST",
+            heroIntro: "No dia 23 de Abril de 2026, o NEAIST viveu um Game Day bonito, leve e cheio de energia positiva, marcado por jogos, risadas e um convívio que tornou a tarde verdadeiramente enriquecedora.",
+            heroButtons: ["Voltar às notícias", "Instagram do NEAIST"],
+            articleTitles: [
+                "Uma tarde feita de convívio",
+                "Jogos, alegria e partilha",
+                "Obrigado a todos os estudantes"
+            ],
+            articleParagraphs: [
+                "No dia 23 de Abril de 2026, reunimo-nos para um Game Day especial no C9, pensado como um momento simples mas marcante de encontro entre estudantes.",
+                "Entre jogos, quiz, conversas e muitos sorrisos, a tarde ganhou vida com a presença de estudantes que trouxeram entusiasmo, abertura e vontade de estar juntos num ambiente leve e acolhedor.",
+                "Mais do que uma atividade informal, este encontro mostrou mais uma vez o valor de criar espaços de pausa, proximidade e comunidade dentro da vida académica.",
+                "Foi uma experiência bonita e verdadeiramente enriquecedora para todos os que conseguiram aparecer, participar e contribuir para o ambiente que se viveu ao longo do evento.",
+                "Deixamos um agradecimento sincero a todos os estudantes que marcaram presença e ajudaram a fazer deste Game Day um momento especial para o NEAIST."
+            ],
+            mediaEyebrow: "Poster e vídeo",
+            mediaTitle: "Reviver o Game Day",
+            mediaText: "Partilhamos aqui o cartaz oficial do evento e um vídeo curto para guardar um pouco da energia vivida nesta tarde.",
+            mediaCardTitles: ["Poster do evento", "Vídeo do Game Day"],
+            mediaCardTexts: [
+                "O cartaz divulgado antes do encontro, com a data de 23 de Abril, o espaço C9 e o convite para uma tarde de quiz, games e fun.",
+                "Um registo em vídeo para recordar o ambiente, a participação dos estudantes e a boa energia que marcou o encontro."
+            ]
+        },
+        en: {
+            title: "NEAIST Game Day | April 23, 2026",
+            description: "NEAIST article about the Game Day held on April 23, 2026, an afternoon of games, connection, and student community at Técnico.",
+            heroMeta: "Events · April 23, 2026",
+            heroTitle: "NEAIST Game Day",
+            heroIntro: "On April 23, 2026, NEAIST enjoyed a beautiful and lively Game Day filled with games, laughter, and a sense of community that made the afternoon truly enriching.",
+            heroButtons: ["Back to news", "NEAIST Instagram"],
+            articleTitles: [
+                "An afternoon built around connection",
+                "Games, joy, and shared moments",
+                "Thanks to all the students"
+            ],
+            articleParagraphs: [
+                "On April 23, 2026, we gathered for a special Game Day in C9, designed as a simple but memorable moment of connection among students.",
+                "Between games, quizzes, conversations, and plenty of smiles, the afternoon came alive through the students who brought enthusiasm, openness, and the willingness to share time together in a warm atmosphere.",
+                "More than an informal activity, this gathering once again showed the value of creating spaces for pause, closeness, and community within academic life.",
+                "It was a beautiful and truly enriching experience for everyone who was able to show up, participate, and help shape the atmosphere throughout the event.",
+                "We leave our sincere thanks to all the students who attended and helped make this Game Day a special moment for NEAIST."
+            ],
+            mediaEyebrow: "Poster and video",
+            mediaTitle: "Relive the Game Day",
+            mediaText: "We are sharing the official poster and a short video to keep some of the energy of that afternoon alive.",
+            mediaCardTitles: ["Event poster", "Game Day video"],
+            mediaCardTexts: [
+                "The poster shared before the gathering, with the April 23 date, the C9 venue, and the invitation to an afternoon of quiz, games, and fun.",
+                "A short video record to remember the atmosphere, student participation, and the great energy that shaped the event."
+            ]
+        }
+    },
     "noticia-tomada-posse-2026.html": {
         pt: {
             title: "Tomada de Posse da Direção 2026 | NEAIST",
@@ -1878,6 +1936,23 @@ function applyPageSpecificTranslations() {
         applyTextList(".social-card > p:not(.article-quote)", copy.socialCardTexts);
         applyHTML(".article-quote", copy.quote);
         applyTextList(".social-link", [copy.socialLink, copy.socialLink]);
+        return;
+    }
+
+    if (pageName === "noticia-game-day-2026.html") {
+        applyText(".article-category-pill", currentLanguage === "en" ? "Events" : "Eventos");
+        applyText(".article-meta", copy.heroMeta);
+        applyText(".article-hero .page-title", copy.heroTitle);
+        applyText(".article-intro", copy.heroIntro);
+        applyTextList(".article-actions .btn", copy.heroButtons);
+        applyTextList(".article-content h2", copy.articleTitles);
+        applyText(".article-lead", copy.articleParagraphs[0]);
+        applyTextList(".article-content p:not(.article-lead)", copy.articleParagraphs.slice(1));
+        applyText(".media-section .eyebrow", copy.mediaEyebrow);
+        applyText(".media-section .section-heading h2", copy.mediaTitle);
+        applyText(".media-section .section-heading p", copy.mediaText);
+        applyTextList(".article-media-card h3", copy.mediaCardTitles);
+        applyTextList(".article-media-card > p", copy.mediaCardTexts);
     }
 }
 
