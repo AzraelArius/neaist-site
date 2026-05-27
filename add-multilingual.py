@@ -8,7 +8,7 @@ import os
 
 # Define pages and their navigation updates
 pages = {
-    'equipa.html': 'Equipa',
+    'loja.html': 'Loja',
     'noticias.html': 'Notícias',
     'galeria.html': 'Galeria',
     'sobre-nos.html': 'Sobre Nós',
@@ -23,7 +23,7 @@ pages = {
 nav_template = '''                    <ul class="nav-list">
                         <li class="nav-item"><a href="index.html" class="nav-link{home_active}" data-i18n="nav_home">Início</a></li>
                         <li class="nav-item"><a href="sobre-nos.html" class="nav-link{about_active}" data-i18n="nav_about">Sobre Nós</a></li>
-                        <li class="nav-item"><a href="equipa.html" class="nav-link{team_active}" data-i18n="nav_team">Equipa</a></li>
+                        <li class="nav-item"><a href="loja.html" class="nav-link{shop_active}" data-i18n="nav_shop">Loja</a></li>
                         <li class="nav-item nav-item-dropdown">
                             <button type="button" class="nav-link nav-dropdown-toggle{academic_active}" data-nav-dropdown aria-expanded="false" aria-haspopup="true">
                                 <span data-i18n="nav_academic">Académico</span>
@@ -54,7 +54,7 @@ def update_navigation(filename, content):
     active_flags = {
         'home_active': '',
         'about_active': '',
-        'team_active': '',
+        'shop_active': '',
         'academic_active': '',
         'study_active': '',
         'news_active': '',
@@ -69,8 +69,8 @@ def update_navigation(filename, content):
         active_flags['home_active'] = ' active'
     elif 'sobre-nos.html' in filename:
         active_flags['about_active'] = ' active'
-    elif 'equipa.html' in filename:
-        active_flags['team_active'] = ' active'
+    elif 'loja.html' in filename:
+        active_flags['shop_active'] = ' active'
     elif 'noticias.html' in filename:
         active_flags['news_active'] = ' active'
     elif 'galeria.html' in filename:
