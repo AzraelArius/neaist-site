@@ -56,6 +56,4 @@ Then open `http://localhost:8000/`.
 - PDFs and downloadable resources are kept under `files/`.
 - Video assets are kept under `media/`.
 
-## Repo policy
 
-This repo is intentionally kept lean. Non-runtime helper scripts, extra setup notes, and duplicated source-drop assets should not be committed unless they are actively needed by the live site.
