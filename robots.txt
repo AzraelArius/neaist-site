@@ -1,4 +1,0 @@
-User-agent: *
-Allow: /
-
-Sitemap: https://neaist.tecnico.ulisboa.pt/sitemap.xml
